@@ -1,0 +1,6 @@
+C:\Users\emree\OneDrive\Belgeler\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\emree\OneDrive\Belgeler\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\emree\OneDrive\Belgeler\GitHub\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\emree\OneDrive\Belgeler\GitHub\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\emree\OneDrive\Belgeler\GitHub\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\emree\OneDrive\Belgeler\GitHub\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

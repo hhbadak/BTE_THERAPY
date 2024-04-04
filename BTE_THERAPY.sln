@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BTE_THERAPY", "BTE_THERAPY\BTE_THERAPY.csproj", "{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{4D50C3E3-C336-4755-8C63-EB96E38067B7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D50C3E3-C336-4755-8C63-EB96E38067B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D50C3E3-C336-4755-8C63-EB96E38067B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D50C3E3-C336-4755-8C63-EB96E38067B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D50C3E3-C336-4755-8C63-EB96E38067B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
