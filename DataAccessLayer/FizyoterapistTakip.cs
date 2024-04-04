@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    internal class FizyoterapistTakip
+    public class FizyoterapistTakip
     {
         public int ID { get; set; }
         public int Fizyoterapist_ID { get; set; }

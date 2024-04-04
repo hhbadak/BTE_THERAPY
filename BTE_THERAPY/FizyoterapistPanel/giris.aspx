@@ -38,15 +38,14 @@
                                     <form id="form1" runat="server">
                                         <div class="mb-3">
                                             <label class="form-label">Email</label>
-                                            <input class="form-control form-control-lg" type="email" name="email" placeholder="Enter your email" />
+                                            <asp:TextBox ID="tb_email" runat="server" CssClass="form-control form-control-lg" placeholder="Mail Adresinizi Giriniz"></asp:TextBox>
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Password</label>
-                                            <input class="form-control form-control-lg" type="password" name="password" placeholder="Enter your password" />
+                                             <asp:TextBox ID="tb_parola" runat="server" type="password" CssClass="form-control form-control-lg" placeholder="Parolanızı Giriniz"></asp:TextBox>
                                         </div>
                                         <div class="text-center mt-3">
-                                            <a href="index.html" class="btn btn-lg btn-primary">Sign in</a>
-                                            <!-- <button type="submit" class="btn btn-lg btn-primary">Sign in</button> -->
+                                            <asp:LinkButton ID="lbtn_giris" runat="server" Text="Giriş Yap" CssClass="btn btn-lg btn-primary" OnClick="lbtn_giris_Click"></asp:LinkButton>
                                         </div>
                                     </form>
                                 </div>

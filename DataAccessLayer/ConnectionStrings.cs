@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    public class HastaEgzersizi
+    public class ConnectionStrings
     {
-        public int ID { get; set; }
-        public int Egzersiz_ID { get; set; }
-        public int Hasta_ID { get; set; }
+        public static string ConStr = @"Data Source=.\SQLEXPRESS; Initial Catalog=BTE_THERAPY;Integrated Security=True";
     }
 }

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    internal class Fizyoterapist
+    public class Fizyoterapist
     {
         public int ID { get; set; }
         public string AdSoyad { get; set; }
@@ -17,5 +17,6 @@ namespace DataAccessLayer
         public bool Cinsiyet { get; set; }
         public DateTime Dogum_Tarihi { get; set; }
         public DateTime Kayit_Tarihi { get; set; }
+        public bool Durum { get; set; }
     }
 }
