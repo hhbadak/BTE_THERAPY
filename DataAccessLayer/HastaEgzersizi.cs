@@ -8,5 +8,8 @@ namespace DataAccessLayer
 {
     internal class HastaEgzersizi
     {
+        public int ID { get; set; }
+        public int Egzersiz_ID { get; set; }
+        public int Hasta_ID { get; set; }
     }
 }

@@ -10,7 +10,6 @@ namespace DataAccessLayer
     {
         public int ID { get; set; }
         public int HastaEgzersizID { get; set; }
-        public string HastaEgzersiz { get; set; }
         public DateTime AtamaTarihi { get; set; }
         public bool YapildiMi { get; set; }
     }

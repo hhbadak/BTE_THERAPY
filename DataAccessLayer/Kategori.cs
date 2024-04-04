@@ -9,6 +9,6 @@ namespace DataAccessLayer
     public class Kategori
     {
         public int ID { get; set; }
-        public string Ad { get; set; }
+        public string AdSoyad { get; set; }
     }
 }

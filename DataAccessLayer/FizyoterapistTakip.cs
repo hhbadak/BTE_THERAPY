@@ -8,5 +8,8 @@ namespace DataAccessLayer
 {
     internal class FizyoterapistTakip
     {
+        public int ID { get; set; }
+        public int Fizyoterapist_ID { get; set; }
+        public int Hasta_ID { get; set; }
     }
 }
