@@ -67,12 +67,52 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FizyoterapistPanel\css\app.css" />
+    <Content Include="FizyoterapistPanel\giris.aspx" />
+    <Content Include="FizyoterapistPanel\img\avatars\avatar-2.jpg" />
+    <Content Include="FizyoterapistPanel\img\avatars\avatar-3.jpg" />
+    <Content Include="FizyoterapistPanel\img\avatars\avatar-4.jpg" />
+    <Content Include="FizyoterapistPanel\img\avatars\avatar-5.jpg" />
+    <Content Include="FizyoterapistPanel\img\avatars\avatar.jpg" />
+    <Content Include="FizyoterapistPanel\img\icons\icon-48x48.png" />
+    <Content Include="FizyoterapistPanel\img\photos\IMG_20220507_234757_794.jpg" />
+    <Content Include="FizyoterapistPanel\img\photos\unsplash-1.jpg" />
+    <Content Include="FizyoterapistPanel\img\photos\unsplash-2.jpg" />
+    <Content Include="FizyoterapistPanel\img\photos\unsplash-3.jpg" />
+    <Content Include="FizyoterapistPanel\index.aspx" />
+    <Content Include="FizyoterapistPanel\js\app.js" />
+    <Content Include="FizyoterapistPanel\js\app.js.LICENSE.txt" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FizyoterapistPanel\giris.aspx.cs">
+      <DependentUpon>giris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FizyoterapistPanel\giris.aspx.designer.cs">
+      <DependentUpon>giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FizyoterapistPanel\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FizyoterapistPanel\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FizyoterapistPanel\index.Master.cs">
+      <DependentUpon>index.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FizyoterapistPanel\index.Master.designer.cs">
+      <DependentUpon>index.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FizyoterapistPanel\css\app.css.map" />
+    <Content Include="FizyoterapistPanel\fonts\.gitkeep" />
+    <Content Include="FizyoterapistPanel\js\app.js.map" />
+    <Content Include="FizyoterapistPanel\index.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -81,6 +121,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -1,0 +1,82 @@
+CREATE DATABASE BTE_THERAPY
+GO
+USE BTE_THERAPY
+GO
+CREATE TABLE Hastalar
+(
+ID INT IDENTITY(1,1),
+AdSoyad NVARCHAR(60),
+Foto NVARCHAR(50),
+EMail NVARCHAR(50),
+Parola NVARCHAR(15),
+Adres NVARCHAR(300),
+Telefon NVARCHAR(15),
+Cinsiyet BIT,
+DogumTarih DATE,
+KayitTarihi DATETIME,
+CONSTRAINT pk_HastalarID PRIMARY KEY(ID)
+)
+GO
+CREATE TABLE Fizyoterapist
+(
+ID INT IDENTITY(1,1),
+AdSoyad NVARCHAR(60),
+Foto NVARCHAR(50),
+EMail NVARCHAR(50),
+Parola NVARCHAR(15),
+Telefon NVARCHAR(15),
+Cinsiyet BIT,
+DogumTarih DATE,
+KayitTarihi DATETIME,
+CONSTRAINT pk_FizyoterapistID PRIMARY KEY(ID)
+)
+GO
+CREATE TABLE Kategori
+(
+ID INT IDENTITY(1,1),
+AdSoyad NVARCHAR(60),
+CONSTRAINT pk_KategoriID PRIMARY KEY(ID)
+)
+GO
+CREATE TABLE FizyoterapistTakip
+(
+ID INT IDENTITY(1,1),
+FizyoterapistID INT,
+HastaID INT,
+CONSTRAINT pk_FizyoterapistTakipID PRIMARY KEY(ID),
+CONSTRAINT fk_FizyoterapistTakipFizyoterapistID FOREIGN KEY(FizyoterapistID) REFERENCES Fizyoterapist(ID),
+CONSTRAINT fk_FizyoterapistTakipHastaID FOREIGN KEY(HastaID) REFERENCES Hastalar(ID),
+)
+GO
+CREATE TABLE Egzersiz
+(
+ID INT IDENTITY(1,1),
+Ad NVARCHAR(50),
+Video NVARCHAR(50),
+Baslik NVARCHAR(50),
+Icerik NVARCHAR(MAX),
+KategoriID INT,
+Foto NVARCHAR(50),
+CONSTRAINT pk_EgzersizID PRIMARY KEY(ID),
+CONSTRAINT fk_EgzersizKategoriID FOREIGN KEY(KategoriID) REFERENCES Kategori(ID)
+)
+GO
+CREATE TABLE HastaEgzersizi
+(
+ID INT IDENTITY(1,1),
+EgzersizID INT,
+HastaID INT,
+CONSTRAINT pk_HastaEgzersiziID PRIMARY KEY(ID),
+CONSTRAINT fk_HastaEgzersiziEgzersizID FOREIGN KEY(EgzersizID) REFERENCES Egzersiz(ID),
+CONSTRAINT fk_HastaEgzersiziHastaID FOREIGN KEY(HastaID) REFERENCES Hastalar(ID)
+)
+GO
+CREATE TABLE HastaTakip
+(
+ID INT IDENTITY(1,1),
+HastaEgzersizID INT,
+AtamaTarihi DATETIME,
+YapildiMi BIT,
+CONSTRAINT pk_HastaTakipID PRIMARY KEY(ID),
+CONSTRAINT fk_HastaTakipHastaEgzersizID FOREIGN KEY(HastaEgzersizID) REFERENCES HastaEgzersizi(ID)
+)
