@@ -1,38 +1,61 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\",
+  "WorkspaceRootPath": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\dataaccesslayer\\hastalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\hastalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|c:\\users\\batuh\\documents\\github\\bte_therapy\\bte_therapy\\temelsayfalar\\anasayfa.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\temelsayfalar\\anasayfa.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\dataaccesslayer\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\bte_therapy\\temelsayfalar\\hakkimizda.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\temelsayfalar\\hakkimizda.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\dataaccesslayer\\hastatakip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\hastatakip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\bte_therapy\\temelsayfalar\\temel.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\temelsayfalar\\temel.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\dataaccesslayer\\egzersiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\egzersiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\bte_therapy\\temelsayfalar\\\u0130letisim.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\temelsayfalar\\\u0130letisim.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\dataaccesslayer\\fizyoterapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\fizyoterapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\bte_therapy\\fizyoterapistpanel\\giris.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\fizyoterapistpanel\\giris.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\dataaccesslayer\\fizyoterapisttakip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\fizyoterapisttakip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\dataaccesslayer\\hastaegzersizi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\dataaccesslayer\\hastaegzersizi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\hastaegzersizi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayer\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\dataaccesslayer\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\dataaccesslayer\\hastalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\hastalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\dataaccesslayer\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\dataaccesslayer\\hastatakip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\hastatakip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\dataaccesslayer\\egzersiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\egzersiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\dataaccesslayer\\fizyoterapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\fizyoterapist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\dataaccesslayer\\fizyoterapisttakip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\fizyoterapisttakip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,107 +65,174 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HastaTakip.cs",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\HastaTakip.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\HastaTakip.cs",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\HastaTakip.cs",
-              "RelativeToolTip": "DataAccessLayer\\HastaTakip.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T18:15:33.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HastaEgzersizi.cs",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\HastaEgzersizi.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\HastaEgzersizi.cs",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\HastaEgzersizi.cs",
-              "RelativeToolTip": "DataAccessLayer\\HastaEgzersizi.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T18:08:19.328Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "FizyoterapistTakip.cs",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\FizyoterapistTakip.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\FizyoterapistTakip.cs",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\FizyoterapistTakip.cs",
-              "RelativeToolTip": "DataAccessLayer\\FizyoterapistTakip.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T18:13:06.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Fizyoterapist.cs",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Fizyoterapist.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Fizyoterapist.cs",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Fizyoterapist.cs",
-              "RelativeToolTip": "DataAccessLayer\\Fizyoterapist.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAyAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T18:10:52.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Hastalar.cs",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Hastalar.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Hastalar.cs",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Hastalar.cs",
-              "RelativeToolTip": "DataAccessLayer\\Hastalar.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T17:52:07.486Z",
+              "Title": "AnaSayfa.aspx",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\AnaSayfa.aspx",
+              "RelativeDocumentMoniker": "BTE_THERAPY\\TemelSayfalar\\AnaSayfa.aspx",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\AnaSayfa.aspx",
+              "RelativeToolTip": "BTE_THERAPY\\TemelSayfalar\\AnaSayfa.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-07T19:04:06.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Kategori.cs",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Kategori.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Kategori.cs",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Kategori.cs",
-              "RelativeToolTip": "DataAccessLayer\\Kategori.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T17:50:42.94Z",
-              "EditorCaption": ""
+              "Title": "Hakkimizda.aspx",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\Hakkimizda.aspx",
+              "RelativeDocumentMoniker": "BTE_THERAPY\\TemelSayfalar\\Hakkimizda.aspx",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\Hakkimizda.aspx",
+              "RelativeToolTip": "BTE_THERAPY\\TemelSayfalar\\Hakkimizda.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-07T19:01:46.768Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Egzersiz.cs",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Egzersiz.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Egzersiz.cs",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Egzersiz.cs",
-              "RelativeToolTip": "DataAccessLayer\\Egzersiz.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-04T17:50:37.018Z",
+              "Title": "\u0130letisim.aspx",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\\u0130letisim.aspx",
+              "RelativeDocumentMoniker": "BTE_THERAPY\\TemelSayfalar\\\u0130letisim.aspx",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\\u0130letisim.aspx",
+              "RelativeToolTip": "BTE_THERAPY\\TemelSayfalar\\\u0130letisim.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-07T18:41:15.152Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Temel.Master",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\Temel.Master",
+              "RelativeDocumentMoniker": "BTE_THERAPY\\TemelSayfalar\\Temel.Master",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\Temel.Master",
+              "RelativeToolTip": "BTE_THERAPY\\TemelSayfalar\\Temel.Master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-07T18:33:05.203Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "giris.aspx",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\FizyoterapistPanel\\giris.aspx",
+              "RelativeDocumentMoniker": "BTE_THERAPY\\FizyoterapistPanel\\giris.aspx",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\FizyoterapistPanel\\giris.aspx",
+              "RelativeToolTip": "BTE_THERAPY\\FizyoterapistPanel\\giris.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-05T18:57:08.801Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ConnectionStrings.cs",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\ConnectionStrings.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\ConnectionStrings.cs",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\ConnectionStrings.cs",
+              "RelativeToolTip": "DataAccessLayer\\ConnectionStrings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T18:56:06.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HastaTakip.cs",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\HastaTakip.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\HastaTakip.cs",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\HastaTakip.cs",
+              "RelativeToolTip": "DataAccessLayer\\HastaTakip.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T18:15:33.774Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HastaEgzersizi.cs",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\HastaEgzersizi.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\HastaEgzersizi.cs",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\HastaEgzersizi.cs",
+              "RelativeToolTip": "DataAccessLayer\\HastaEgzersizi.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T18:08:19.328Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "FizyoterapistTakip.cs",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\FizyoterapistTakip.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\FizyoterapistTakip.cs",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\FizyoterapistTakip.cs",
+              "RelativeToolTip": "DataAccessLayer\\FizyoterapistTakip.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T18:13:06.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Fizyoterapist.cs",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Fizyoterapist.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Fizyoterapist.cs",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Fizyoterapist.cs",
+              "RelativeToolTip": "DataAccessLayer\\Fizyoterapist.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T18:10:52.067Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "Hastalar.cs",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Hastalar.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Hastalar.cs",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Hastalar.cs",
+              "RelativeToolTip": "DataAccessLayer\\Hastalar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T17:52:07.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Kategori.cs",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Kategori.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Kategori.cs",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Kategori.cs",
+              "RelativeToolTip": "DataAccessLayer\\Kategori.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T17:50:42.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Egzersiz.cs",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Egzersiz.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Egzersiz.cs",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Egzersiz.cs",
+              "RelativeToolTip": "DataAccessLayer\\Egzersiz.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T17:50:37.018Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Class1.cs",
-              "RelativeDocumentMoniker": "DataAccessLayer\\Class1.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Class1.cs",
               "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Class1.cs",
-              "RelativeToolTip": "DataAccessLayer\\Class1.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Class1.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-04T16:16:46.637Z"
             }

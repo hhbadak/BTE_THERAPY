@@ -85,6 +85,52 @@
     <Content Include="FizyoterapistPanel\index.aspx" />
     <Content Include="FizyoterapistPanel\js\app.js" />
     <Content Include="FizyoterapistPanel\js\app.js.LICENSE.txt" />
+    <Content Include="TemelSayfalar\AnaSayfa.aspx" />
+    <Content Include="TemelSayfalar\css\bootstrap.min.css" />
+    <Content Include="TemelSayfalar\css\style.css" />
+    <Content Include="TemelSayfalar\Hakkimizda.aspx" />
+    <Content Include="TemelSayfalar\img\about-1.jpg" />
+    <Content Include="TemelSayfalar\img\about-2.jpg" />
+    <Content Include="TemelSayfalar\img\carousel-1.jpg" />
+    <Content Include="TemelSayfalar\img\carousel-2.jpg" />
+    <Content Include="TemelSayfalar\img\carousel-3.jpg" />
+    <Content Include="TemelSayfalar\img\feature.jpg" />
+    <Content Include="TemelSayfalar\img\header-page.jpg" />
+    <Content Include="TemelSayfalar\img\team-1.jpg" />
+    <Content Include="TemelSayfalar\img\team-2.jpg" />
+    <Content Include="TemelSayfalar\img\team-3.jpg" />
+    <Content Include="TemelSayfalar\img\team-4.jpg" />
+    <Content Include="TemelSayfalar\img\testimonial-1.jpg" />
+    <Content Include="TemelSayfalar\img\testimonial-2.jpg" />
+    <Content Include="TemelSayfalar\img\testimonial-3.jpg" />
+    <Content Include="TemelSayfalar\js\main.js" />
+    <Content Include="TemelSayfalar\lib\animate\animate.css" />
+    <Content Include="TemelSayfalar\lib\animate\animate.min.css" />
+    <Content Include="TemelSayfalar\lib\counterup\counterup.min.js" />
+    <Content Include="TemelSayfalar\lib\easing\easing.js" />
+    <Content Include="TemelSayfalar\lib\easing\easing.min.js" />
+    <Content Include="TemelSayfalar\lib\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="TemelSayfalar\lib\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="TemelSayfalar\lib\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="TemelSayfalar\lib\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="TemelSayfalar\lib\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="TemelSayfalar\lib\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="TemelSayfalar\lib\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="TemelSayfalar\lib\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="TemelSayfalar\lib\owlcarousel\owl.carousel.js" />
+    <Content Include="TemelSayfalar\lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="TemelSayfalar\lib\tempusdominus\css\tempusdominus-bootstrap-4.css" />
+    <Content Include="TemelSayfalar\lib\tempusdominus\css\tempusdominus-bootstrap-4.min.css" />
+    <Content Include="TemelSayfalar\lib\tempusdominus\js\moment-timezone.min.js" />
+    <Content Include="TemelSayfalar\lib\tempusdominus\js\moment.min.js" />
+    <Content Include="TemelSayfalar\lib\tempusdominus\js\tempusdominus-bootstrap-4.js" />
+    <Content Include="TemelSayfalar\lib\tempusdominus\js\tempusdominus-bootstrap-4.min.js" />
+    <Content Include="TemelSayfalar\lib\waypoints\links.php" />
+    <Content Include="TemelSayfalar\lib\waypoints\waypoints.min.js" />
+    <Content Include="TemelSayfalar\lib\wow\wow.js" />
+    <Content Include="TemelSayfalar\lib\wow\wow.min.js" />
+    <Content Include="TemelSayfalar\MasterPage.html" />
+    <Content Include="TemelSayfalar\İletisim.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -124,6 +170,34 @@
       <DependentUpon>index.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TemelSayfalar\AnaSayfa.aspx.cs">
+      <DependentUpon>AnaSayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemelSayfalar\AnaSayfa.aspx.designer.cs">
+      <DependentUpon>AnaSayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemelSayfalar\Hakkimizda.aspx.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemelSayfalar\Hakkimizda.aspx.designer.cs">
+      <DependentUpon>Hakkimizda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemelSayfalar\Temel.Master.cs">
+      <DependentUpon>Temel.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemelSayfalar\Temel.Master.designer.cs">
+      <DependentUpon>Temel.Master</DependentUpon>
+    </Compile>
+    <Compile Include="TemelSayfalar\İletisim.aspx.cs">
+      <DependentUpon>İletisim.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemelSayfalar\İletisim.aspx.designer.cs">
+      <DependentUpon>İletisim.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="FizyoterapistPanel\css\app.css.map" />
@@ -131,6 +205,96 @@
     <Content Include="FizyoterapistPanel\js\app.js.map" />
     <Content Include="FizyoterapistPanel\index.Master" />
     <None Include="packages.config" />
+    <Content Include="TemelSayfalar\Temel.Master" />
+    <Content Include="TemelSayfalar\scss\bootstrap.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\bootstrap-utilities.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\bootstrap.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\forms\_floating-labels.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\forms\_form-check.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\forms\_form-control.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\forms\_form-range.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\forms\_form-select.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\forms\_form-text.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\forms\_input-group.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\forms\_labels.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\forms\_validation.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\helpers\_clearfix.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\helpers\_colored-links.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\helpers\_position.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\helpers\_ratio.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\helpers\_stretched-link.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\helpers\_text-truncation.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\helpers\_visually-hidden.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_color-scheme.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_container.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_deprecate.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_table-variants.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_utilities.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\mixins\_visually-hidden.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\utilities\_api.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\vendor\_rfs.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_accordion.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_alert.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_badge.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_button-group.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_buttons.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_card.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_carousel.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_close.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_containers.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_dropdown.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_forms.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_functions.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_grid.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_helpers.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_images.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_list-group.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_mixins.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_modal.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_nav.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_navbar.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_offcanvas.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_pagination.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_popover.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_progress.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_reboot.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_root.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_spinners.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_tables.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_toasts.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_tooltip.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_transitions.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_type.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_utilities.scss" />
+    <Content Include="TemelSayfalar\scss\bootstrap\scss\_variables.scss" />
+    <Content Include="TemelSayfalar\lib\owlcarousel\LICENSE" />
+    <Content Include="TemelSayfalar\.vs\klinik-1.0.0\config\applicationhost.config" />
+    <Content Include="TemelSayfalar\.vs\klinik-1.0.0\FileContentIndex\a86b9d5a-cfd1-4296-a39e-c718d1c0999b.vsidx" />
+    <Content Include="TemelSayfalar\.vs\klinik-1.0.0\v17\.wsuo" />
+    <Content Include="TemelSayfalar\.vs\klinik-1.0.0\v17\DocumentLayout.json" />
+    <Content Include="TemelSayfalar\.vs\slnx.sqlite" />
+    <Content Include="TemelSayfalar\.vs\VSWorkspaceState.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -144,6 +308,7 @@
       <Name>DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
