@@ -18,7 +18,7 @@ namespace DataAccessLayer
         public bool Cinsiyet { get; set; }
         public DateTime DogumTarih { get; set; }
         public DateTime KayitTarihi { get; set; }
-
+        public bool Durum { get; set; }
 
     }
 }

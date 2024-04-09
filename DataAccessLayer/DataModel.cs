@@ -31,7 +31,7 @@ namespace DataAccessLayer
 
                 if (sayi > 0)
                 {
-                    cmd.CommandText = "SELECT ID, AdSoyad, Foto, EMail, Telefon, Cinsiyet, DogumTarih, KayitTarihi, Durum FROM Fizyoterapist WHERE EMail = @mail AND Parola = @sifre";
+                    cmd.CommandText = "SELECT ID, AdSoyad, Foto, EMail, Telefon, Cinsiyet, DogumTarih, KayitTarihi, Durum FROM Fizyoterapist WHERE EMail = @mail AND Parola = @sifre AND Durum = 1";
                     cmd.Parameters.Clear();
                     cmd.Parameters.AddWithValue("@mail", mail);
                     cmd.Parameters.AddWithValue("@sifre", sifre);
@@ -151,6 +151,95 @@ namespace DataAccessLayer
             catch
             {
                 return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        #endregion
+
+        #region Hasta İşlemleri
+
+        public Hastalar HastaGiris(string mail, string sifre)
+        {
+            try
+            {
+                cmd.CommandText = "SELECT COUNT(*) FROM Hastalar WHERE EMail = @mail AND Parola = @parola";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@mail", mail);
+                cmd.Parameters.AddWithValue("@parola", sifre);
+                con.Open();
+                int sayi = Convert.ToInt32(cmd.ExecuteScalar());
+
+                if (sayi > 0)
+                {
+                    cmd.CommandText = "SELECT ID, AdSoyad, Foto, EMail, Parola, Adres, Telefon, Cinsiyet, DogumTarih, KayitTarihi, Durum FROM Hastalar WHERE EMail = @mail AND Parola = @sifre AND Durum = 1";
+                    cmd.Parameters.Clear();
+                    cmd.Parameters.AddWithValue("@mail", mail);
+                    cmd.Parameters.AddWithValue("@sifre", sifre);
+                    //con.Open();//SAKIN YAPMA
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    Hastalar h = new Hastalar();
+                    while (reader.Read())
+                    {
+                        h.ID = reader.GetInt32(0);
+                        h.AdSoyad = reader.GetString(1);
+                        h.Foto = reader.GetString(2);
+                        h.EMail = reader.GetString(3);
+                        h.Parola = reader.GetString(4);
+                        h.Adres = reader.GetString(5);
+                        h.Telefon = reader.GetString(6);
+                        h.Cinsiyet = reader.GetBoolean(7);
+                        h.DogumTarih = reader.GetDateTime(8);
+                        h.KayitTarihi = reader.GetDateTime(9);
+                        h.Durum = reader.GetBoolean(10);
+                    }
+                    return h;
+                }
+                else
+                {
+                    return null;
+                }
+
+            }
+            catch
+            {
+                return null;
+            }
+            finally { con.Close(); }
+        }
+
+        public List<Hastalar> HastaListele()
+        {
+            List<Hastalar> hasta = new List<Hastalar>();
+            try
+            {
+                cmd.CommandText = "Select * From Hastalar";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Hastalar h = new Hastalar();
+                    h.ID = reader.GetInt32(0);
+                    h.AdSoyad = reader.GetString(1);
+                    h.Foto = reader.GetString(2);
+                    h.EMail = reader.GetString(3);
+                    h.Parola = reader.GetString(4);
+                    h.Adres = reader.GetString(5);
+                    h.Telefon = reader.GetString(6);
+                    h.Cinsiyet = reader.GetBoolean(7);
+                    h.DogumTarih = reader.GetDateTime(8);
+                    h.KayitTarihi = reader.GetDateTime(9);
+                    h.Durum = reader.GetBoolean(10);
+                    hasta.Add(h);
+                }
+                return hasta;
+            }
+            catch
+            {
+                return null;
             }
             finally
             {

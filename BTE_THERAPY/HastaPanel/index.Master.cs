@@ -3,27 +3,16 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.DynamicData.ModelProviders;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace BTE_THERAPY.FizyoterapistPanel
+namespace BTE_THERAPY.HastaPanel
 {
     public partial class index : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             DataModel dm = new DataModel();
-            if (Session["fizyoterapist"] != null)
-            {
-                Fizyoterapist f = (Fizyoterapist)Session["fizyoterapist"];
-                rp_dropdown.DataSource = dm.FizyoterapistListele();
-                rp_dropdown.DataBind();
-            }
-            else
-            {
-                Response.Redirect("../FizyoterapistPanel/giris.aspx");
-            }
             if (Session["hasta"] != null)
             {
                 Hastalar h = (Hastalar)Session["hasta"];
@@ -32,7 +21,6 @@ namespace BTE_THERAPY.FizyoterapistPanel
             {
                 Response.Redirect("../FizyoterapistPanel/giris.aspx");
             }
-
         }
     }
 }

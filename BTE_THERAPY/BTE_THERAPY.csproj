@@ -78,6 +78,7 @@
     <Content Include="FizyoterapistPanel\img\avatars\avatar.jpg" />
     <Content Include="FizyoterapistPanel\img\icerik\BTE.jpg" />
     <Content Include="FizyoterapistPanel\img\icons\icon-48x48.png" />
+    <Content Include="FizyoterapistPanel\img\photos\DSC_1879.jpg" />
     <Content Include="FizyoterapistPanel\img\photos\IMG_20220507_234757_794.jpg" />
     <Content Include="FizyoterapistPanel\img\photos\unsplash-1.jpg" />
     <Content Include="FizyoterapistPanel\img\photos\unsplash-2.jpg" />
@@ -85,20 +86,7 @@
     <Content Include="FizyoterapistPanel\index.aspx" />
     <Content Include="FizyoterapistPanel\js\app.js" />
     <Content Include="FizyoterapistPanel\js\app.js.LICENSE.txt" />
-    <Content Include="HastaPaneli\css\app.css" />
-    <Content Include="HastaPaneli\img\avatars\avatar-2.jpg" />
-    <Content Include="HastaPaneli\img\avatars\avatar-3.jpg" />
-    <Content Include="HastaPaneli\img\avatars\avatar-4.jpg" />
-    <Content Include="HastaPaneli\img\avatars\avatar-5.jpg" />
-    <Content Include="HastaPaneli\img\avatars\avatar.jpg" />
-    <Content Include="HastaPaneli\img\icons\icon-48x48.png" />
-    <Content Include="HastaPaneli\img\photos\unsplash-1.jpg" />
-    <Content Include="HastaPaneli\img\photos\unsplash-2.jpg" />
-    <Content Include="HastaPaneli\img\photos\unsplash-3.jpg" />
-    <Content Include="HastaPaneli\js\app.js" />
-    <Content Include="HastaPaneli\js\app.js.LICENSE.txt" />
-    <Content Include="HastaPaneli\egzersizler.aspx" />
-    <Content Include="HastaPaneli\kullanıcıgiris.aspx" />
+    <Content Include="HastaPanel\index.aspx" />
     <Content Include="TemelSayfalar\AnaSayfa.aspx" />
     <Content Include="TemelSayfalar\css\bootstrap.min.css" />
     <Content Include="TemelSayfalar\css\style.css" />
@@ -183,26 +171,19 @@
     <Compile Include="FizyoterapistPanel\index.Master.designer.cs">
       <DependentUpon>index.Master</DependentUpon>
     </Compile>
-    <Compile Include="HastaPaneli\hasta.Master.cs">
-      <DependentUpon>hasta.Master</DependentUpon>
+    <Compile Include="HastaPanel\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HastaPaneli\hasta.Master.designer.cs">
-      <DependentUpon>hasta.Master</DependentUpon>
+    <Compile Include="HastaPanel\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
-    <Compile Include="HastaPaneli\egzersizler.aspx.cs">
-      <DependentUpon>egzersizler.aspx</DependentUpon>
+    <Compile Include="HastaPanel\index.Master.cs">
+      <DependentUpon>index.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="HastaPaneli\egzersizler.aspx.designer.cs">
-      <DependentUpon>egzersizler.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="HastaPaneli\kullanıcıgiris.aspx.cs">
-      <DependentUpon>kullanıcıgiris.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="HastaPaneli\kullanıcıgiris.aspx.designer.cs">
-      <DependentUpon>kullanıcıgiris.aspx</DependentUpon>
+    <Compile Include="HastaPanel\index.Master.designer.cs">
+      <DependentUpon>index.Master</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TemelSayfalar\AnaSayfa.aspx.cs">
@@ -239,10 +220,7 @@
     <Content Include="FizyoterapistPanel\fonts\.gitkeep" />
     <Content Include="FizyoterapistPanel\js\app.js.map" />
     <Content Include="FizyoterapistPanel\index.Master" />
-    <Content Include="HastaPaneli\hasta.Master" />
-    <Content Include="HastaPaneli\css\app.css.map" />
-    <Content Include="HastaPaneli\fonts\.gitkeep" />
-    <Content Include="HastaPaneli\js\app.js.map" />
+    <Content Include="HastaPanel\index.Master" />
     <None Include="packages.config" />
     <Content Include="TemelSayfalar\Temel.Master" />
     <Content Include="TemelSayfalar\scss\bootstrap.scss" />

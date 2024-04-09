@@ -1,11 +1,10 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="hasta.Master.cs" Inherits="BTE_THERAPY.HastaPaneli.Site1" %>
-
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="index.master.cs" Inherits="BTE_THERAPY.HastaPanel.index" %>
 
 <!DOCTYPE html>
 
 <html>
 <head runat="server">
-  <meta charset="utf-8">
+    <meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
@@ -21,13 +20,12 @@
 
 	<link href="../FizyoterapistPanel/css/app.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-	</head>
+</head>
 <body>
     <form id="form1" runat="server">
-		<div class="wrapper">
+        <div class="wrapper">
 		<nav id="sidebar" class="sidebar js-sidebar">
 			<div class="sidebar-content js-simplebar">
 				<a class="sidebar-brand" href="index.html">
@@ -36,20 +34,26 @@
 
 				<ul class="sidebar-nav">
 					<li class="sidebar-header">
-						Hasta Paneli
+						Fizyoterapist
 					</li>
 
 					<li class="sidebar-item active">
-						<a class="sidebar-link" href="../HastaPaneli/egzersizler.aspx">
-              <i class="align-middle" data-feather="activity"></i> <span class="align-middle">Egzersizler</span>
+						<a class="sidebar-link" href="../HastaPanel/icerik.aspx">
+              <i class="align-middle" data-feather="download"></i> <span class="align-middle">İçerikler</span>
             </a>
 					</li>
 
-				 <li class="sidebar-item">
-						<a class="sidebar-link" href="../HastaPaneli/hasta_takip.aspx">
-              <i class="align-middle" data-feather="user"></i> <span class="align-middle"></span>
+					<%--<li class="sidebar-item">
+						<a class="sidebar-link" href="../HastaPanel/hasta_takip.aspx">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Hasta Takip</span>
             </a>
-					</li>
+					</li>--%>
+
+						<%--<li class="sidebar-item">
+						<a class="sidebar-link" href="../HastaPanel/hasta_takip.aspx">
+              <i class="align-middle" data-feather="user"></i> <span class="align-middle">Hasta Takip</span>
+            </a>
+					</li>--%>
 
 					
 				</ul>
@@ -229,8 +233,8 @@
 				</div>
 			</nav>
 			
+            
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
             </asp:ContentPlaceHolder>
 
 		</div>
@@ -463,5 +467,3 @@
     </form>
 </body>
 </html>
-
-           

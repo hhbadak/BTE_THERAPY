@@ -21,12 +21,31 @@ namespace BTE_THERAPY.FizyoterapistPanel
             if (!string.IsNullOrEmpty(tb_email.Text) && !string.IsNullOrEmpty(tb_parola.Text))
             {
                 Fizyoterapist f = dm.FizyoterapistGiris(tb_email.Text, tb_parola.Text);
+                Hastalar h = dm.HastaGiris(tb_email.Text, tb_parola.Text);
                 if (f != null)
                 {
                     if (f.Durum)
                     {
                         Session["fizyoterapist"] = f;
                         Response.Redirect("../FizyoterapistPanel/index.aspx");
+                    }
+                    else
+                    {
+                        //pnl_hata.Visible = true;
+                        //lbl_hata.Text = "Kullanıcı Hesabınız Aktif değil";
+                    }
+                }
+                else
+                {
+                    //pnl_hata.Visible = true;
+                    //lbl_hata.Text = "Kullanıcı Bulunamadı";
+                }
+                if (h != null)
+                {
+                    if (h.Durum)
+                    {
+                        Session["hasta"] = h;
+                        Response.Redirect("../HastaPanel/index.aspx");
                     }
                     else
                     {

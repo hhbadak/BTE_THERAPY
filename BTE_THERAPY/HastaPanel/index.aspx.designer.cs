@@ -7,11 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace BTE_THERAPY.HastaPaneli
+namespace BTE_THERAPY.HastaPanel
 {
 
 
-    public partial class WebForm1
+    public partial class index1
     {
     }
 }
