@@ -42,12 +42,12 @@ namespace BTE_THERAPY.HastaPaneli
         protected global::System.Web.UI.WebControls.TextBox tb_parola;
 
         /// <summary>
-        /// lbtn_giris control.
+        /// kullanici_giris control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton lbtn_giris;
+        protected global::System.Web.UI.WebControls.LinkButton kullanici_giris;
     }
 }

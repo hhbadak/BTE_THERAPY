@@ -46,7 +46,7 @@
                                              <asp:TextBox ID="tb_parola" runat="server" type="password" CssClass="form-control form-control-lg" placeholder="Parolanızı Giriniz"></asp:TextBox>
                                         </div>
                                         <div class="text-center mt-3">
-                                            <asp:LinkButton ID="lbtn_giris" runat="server" Text="Giriş Yap" CssClass="btn btn-lg btn-primary" OnClick="lbtn_giris_Click"></asp:LinkButton>
+                                            <asp:LinkButton ID="kullanici_giris" runat="server" Text="Giriş Yap" CssClass="btn btn-lg btn-primary" OnClick="kullanici_giris_Click"></asp:LinkButton>
                                         </div>
                                     </form>
                                 </div>

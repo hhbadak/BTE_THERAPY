@@ -11,12 +11,9 @@ namespace BTE_THERAPY.FizyoterapistPanel
     public partial class giris : System.Web.UI.Page
     {
         DataModel dm = new DataModel();
-        protected void Page_Load(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        protected void lbtn_giris_Click(object sender, EventArgs e)
+        protected void kullanici_giris_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(tb_email.Text) && !string.IsNullOrEmpty(tb_parola.Text))
             {
