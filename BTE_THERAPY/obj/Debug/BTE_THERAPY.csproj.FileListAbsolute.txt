@@ -118,6 +118,7 @@ C:\Users\HsnHs\OneDrive\Belgeler\GitHub\BTE_THERAPY\BTE_THERAPY\obj\Debug\BTE_TH
 C:\Users\HsnHs\OneDrive\Belgeler\GitHub\BTE_THERAPY\BTE_THERAPY\obj\Debug\BTE_THERAPY.pdb
 C:\Users\HsnHs\OneDrive\Belgeler\GitHub\BTE_THERAPY\BTE_THERAPY\bin\DataAccessLayer.dll
 C:\Users\HsnHs\OneDrive\Belgeler\GitHub\BTE_THERAPY\BTE_THERAPY\bin\DataAccessLayer.pdb
+<<<<<<< Updated upstream
 C:\Users\batuh\Documents\GitHub\BTE_THERAPY\BTE_THERAPY\bin\BTE_THERAPY.dll.config
 C:\Users\batuh\Documents\GitHub\BTE_THERAPY\BTE_THERAPY\bin\BTE_THERAPY.dll
 C:\Users\batuh\Documents\GitHub\BTE_THERAPY\BTE_THERAPY\bin\BTE_THERAPY.pdb
@@ -240,5 +241,7 @@ C:\Users\batuh\Desktop\BTE_THERAPY\BTE_THERAPY\obj\Debug\BTE_THERAPY.csproj.Core
 C:\Users\batuh\Desktop\BTE_THERAPY\BTE_THERAPY\obj\Debug\BTE_THER.EF5D1F96.Up2Date
 C:\Users\batuh\Desktop\BTE_THERAPY\BTE_THERAPY\obj\Debug\BTE_THERAPY.dll
 C:\Users\batuh\Desktop\BTE_THERAPY\BTE_THERAPY\obj\Debug\BTE_THERAPY.pdb
+=======
+>>>>>>> Stashed changes
 C:\Users\emree\OneDrive\Belgeler\GitHub\BTE_THERAPY\BTE_THERAPY\bin\DataAccessLayer.dll
 C:\Users\emree\OneDrive\Belgeler\GitHub\BTE_THERAPY\BTE_THERAPY\bin\DataAccessLayer.pdb

@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\bte_therapy\\hastapaneli\\egzersizler.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\hastapaneli\\egzersizler.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
@@ -60,6 +61,13 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\dataaccesslayer\\hastalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+=======
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\dataaccesslayer\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\dataaccesslayer\\hastalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+>>>>>>> Stashed changes
       "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\hastalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -83,6 +91,13 @@
       "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\fizyoterapisttakip.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+<<<<<<< Updated upstream
+=======
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\dataaccesslayer\\hastaegzersizi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\hastaegzersizi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+>>>>>>> Stashed changes
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccessLayer\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -94,6 +109,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 5,
           "Children": [
             {
@@ -250,11 +266,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 13,
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+>>>>>>> Stashed changes
               "Title": "ConnectionStrings.cs",
               "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\ConnectionStrings.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\ConnectionStrings.cs",
               "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\ConnectionStrings.cs",
               "RelativeToolTip": "DataAccessLayer\\ConnectionStrings.cs",
+<<<<<<< Updated upstream
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-05T18:56:06.019Z"
@@ -262,6 +286,16 @@
             {
               "$type": "Document",
               "DocumentIndex": 16,
+=======
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-05T19:01:30.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+>>>>>>> Stashed changes
               "Title": "HastaTakip.cs",
               "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\HastaTakip.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\HastaTakip.cs",
@@ -273,7 +307,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 12,
+=======
+              "DocumentIndex": 7,
+>>>>>>> Stashed changes
               "Title": "HastaEgzersizi.cs",
               "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\HastaEgzersizi.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\HastaEgzersizi.cs",
@@ -285,7 +323,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 19,
+=======
+              "DocumentIndex": 6,
+>>>>>>> Stashed changes
               "Title": "FizyoterapistTakip.cs",
               "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\FizyoterapistTakip.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\FizyoterapistTakip.cs",
@@ -297,7 +339,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 18,
+=======
+              "DocumentIndex": 5,
+>>>>>>> Stashed changes
               "Title": "Fizyoterapist.cs",
               "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Fizyoterapist.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Fizyoterapist.cs",
@@ -309,7 +355,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 14,
+=======
+              "DocumentIndex": 1,
+>>>>>>> Stashed changes
               "Title": "Hastalar.cs",
               "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Hastalar.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Hastalar.cs",
@@ -321,7 +371,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 15,
+=======
+              "DocumentIndex": 2,
+>>>>>>> Stashed changes
               "Title": "Kategori.cs",
               "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Kategori.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Kategori.cs",
@@ -333,7 +387,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 17,
+=======
+              "DocumentIndex": 4,
+>>>>>>> Stashed changes
               "Title": "Egzersiz.cs",
               "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Egzersiz.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Egzersiz.cs",
@@ -345,7 +403,11 @@
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 20,
+=======
+              "DocumentIndex": 8,
+>>>>>>> Stashed changes
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Class1.cs",
               "RelativeDocumentMoniker": "DataAccessLayer\\Class1.cs",
