@@ -1,4 +1,11 @@
-/********** Template CSS **********/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+.navbar {
+    font-family: 'Poppins', sans-serif;
+}
+.body {
+    font-family: 'Poppins', sans-serif;
+}
+
 :root {
     --primary: #0463FA;
     --light: #EFF5FF;
@@ -94,7 +101,7 @@
     color: #FFFFFF;
     font-size: 15px;
     font-weight: 500;
-    text-transform: uppercase;
+    
     outline: none;
 }
 

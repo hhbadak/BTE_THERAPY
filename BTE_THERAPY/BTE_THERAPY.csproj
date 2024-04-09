@@ -86,6 +86,8 @@
     <Content Include="FizyoterapistPanel\index.aspx" />
     <Content Include="FizyoterapistPanel\js\app.js" />
     <Content Include="FizyoterapistPanel\js\app.js.LICENSE.txt" />
+    <Content Include="HastaPanel\css\egzersizkarti.css" />
+    <Content Include="HastaPanel\fotolar\foto.png" />
     <Content Include="HastaPanel\index.aspx" />
     <Content Include="TemelSayfalar\AnaSayfa.aspx" />
     <Content Include="TemelSayfalar\css\bootstrap.min.css" />
@@ -93,6 +95,7 @@
     <Content Include="TemelSayfalar\Hakkimizda.aspx" />
     <Content Include="TemelSayfalar\img\about-1.jpg" />
     <Content Include="TemelSayfalar\img\about-2.jpg" />
+    <Content Include="TemelSayfalar\img\btelogo.png" />
     <Content Include="TemelSayfalar\img\carousel-1.jpg" />
     <Content Include="TemelSayfalar\img\carousel-2.jpg" />
     <Content Include="TemelSayfalar\img\carousel-3.jpg" />
@@ -131,7 +134,6 @@
     <Content Include="TemelSayfalar\lib\waypoints\waypoints.min.js" />
     <Content Include="TemelSayfalar\lib\wow\wow.js" />
     <Content Include="TemelSayfalar\lib\wow\wow.min.js" />
-    <Content Include="TemelSayfalar\MasterPage.html" />
     <Content Include="TemelSayfalar\İletisim.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>

@@ -40,7 +40,7 @@
             <!-- Navbar -->
            <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-            <h1 class="m-0 text-primary"><i class="far fa-hospital me-3"></i>BTE-THERAPY</h1>
+            <h1 class="m-0 text-primary"><img src="../TemelSayfalar/img/btelogo.png" style="width: 230px; height: auto;" alt="Logo"></h1>
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -50,7 +50,7 @@
                 <a href="anasayfa.aspx" class="nav-item nav-link">AnaSayfa</a>
                 <a href="Hakkimizda.aspx" class="nav-item nav-link">Hakkımızda</a>
                 <a href="İletisim.aspx" class="nav-item nav-link">İletişim</a>
-                <a href="giris.aspx" class="nav-item nav-link">Giriş Yap</a>
+                <a href="../FizyoterapistPanel/giris.aspx" class="nav-item nav-link">Giriş Yap</a>
                 <a href="kayit.aspx" class="nav-item nav-link">Kayıt Ol</a>
             </div>
         </div>

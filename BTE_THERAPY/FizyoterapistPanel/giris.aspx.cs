@@ -17,7 +17,7 @@ namespace BTE_THERAPY.FizyoterapistPanel
         }
 
         protected void lbtn_giris_Click(object sender, EventArgs e)
-        {
+        { 
             if (!string.IsNullOrEmpty(tb_email.Text) && !string.IsNullOrEmpty(tb_parola.Text))
             {
                 Fizyoterapist f = dm.FizyoterapistGiris(tb_email.Text, tb_parola.Text);

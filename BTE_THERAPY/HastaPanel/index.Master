@@ -20,6 +20,8 @@
 
 	<link href="../FizyoterapistPanel/css/app.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+	<!-- Egzersiz KARTI CSS -->
+<link rel="stylesheet" href="css/egzersizkarti.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -38,8 +40,8 @@
 					</li>
 
 					<li class="sidebar-item active">
-						<a class="sidebar-link" href="../HastaPanel/icerik.aspx">
-              <i class="align-middle" data-feather="download"></i> <span class="align-middle">İçerikler</span>
+						<a class="sidebar-link" href="../HastaPanel/index.aspx">
+              <i class="align-middle" data-feather="activity"></i> <span class="align-middle">Egzersizler</span>
             </a>
 					</li>
 
