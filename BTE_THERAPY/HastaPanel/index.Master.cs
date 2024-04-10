@@ -16,6 +16,8 @@ namespace BTE_THERAPY.HastaPanel
             if (Session["hasta"] != null)
             {
                 Hastalar h = (Hastalar)Session["hasta"];
+                rp_dropdown.DataSource = dm.HastaListele();
+                rp_dropdown.DataBind();
             }
             else
             {

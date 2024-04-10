@@ -40,15 +40,15 @@ namespace DataAccessLayer
                     Fizyoterapist f = new Fizyoterapist();
                     while (reader.Read())
                     {
-                       f.ID = reader.GetInt32(0);
-                       f.AdSoyad = reader.GetString(1);
-                       f.Foto = reader.GetString(2);
-                       f.Email = reader.GetString(3);
-                       f.Telefon = reader.GetString(4);
-                       f.Cinsiyet = reader.GetBoolean(5);
-                       f.Dogum_Tarihi = reader.GetDateTime(6);
-                       f.Kayit_Tarihi = reader.GetDateTime(7);
-                       f.Durum = reader.GetBoolean(8);
+                        f.ID = reader.GetInt32(0);
+                        f.AdSoyad = reader.GetString(1);
+                        f.Foto = reader.GetString(2);
+                        f.Email = reader.GetString(3);
+                        f.Telefon = reader.GetString(4);
+                        f.Cinsiyet = reader.GetBoolean(5);
+                        f.Dogum_Tarihi = reader.GetDateTime(6);
+                        f.Kayit_Tarihi = reader.GetDateTime(7);
+                        f.Durum = reader.GetBoolean(8);
                     }
                     return f;
                 }
@@ -239,6 +239,46 @@ namespace DataAccessLayer
             }
             catch
             {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Egzersiz> VerileriKategoridenGetir(int selectedCategoryID)
+        {
+            List<Egzersiz> egzersizListesi = new List<Egzersiz>();
+            try
+            {
+                cmd.CommandText = "SELECT * FROM Egzersiz WHERE KategoriID = @KategoriID";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@KategoriID", selectedCategoryID);
+                cmd.Connection = con;
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Egzersiz e = new Egzersiz
+                    {
+                        ID = reader.GetInt32(reader.GetOrdinal("ID")),
+                        Ad = reader.GetString(reader.GetOrdinal("Ad")),
+                        Video = reader.IsDBNull(reader.GetOrdinal("Video")) ? null : reader.GetString(reader.GetOrdinal("Video")),
+                        Baslik = reader.GetString(reader.GetOrdinal("Baslik")),
+                        Icerik = reader.GetString(reader.GetOrdinal("Icerik")),
+                        Kategori_ID = reader.GetInt32(reader.GetOrdinal("KategoriID")),
+                        Foto = reader.IsDBNull(reader.GetOrdinal("Foto")) ? null : reader.GetString(reader.GetOrdinal("Foto"))
+                    };
+                    egzersizListesi.Add(e);
+                }
+                reader.Close();
+                return egzersizListesi;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hata: " + ex.Message);
                 return null;
             }
             finally

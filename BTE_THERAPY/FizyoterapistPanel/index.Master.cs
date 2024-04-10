@@ -24,14 +24,6 @@ namespace BTE_THERAPY.FizyoterapistPanel
             {
                 Response.Redirect("../FizyoterapistPanel/giris.aspx");
             }
-            if (Session["hasta"] != null)
-            {
-                Hastalar h = (Hastalar)Session["hasta"];
-            }
-            else
-            {
-                Response.Redirect("../FizyoterapistPanel/giris.aspx");
-            }
 
         }
     }
