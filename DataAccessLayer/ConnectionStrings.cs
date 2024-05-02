@@ -8,6 +8,6 @@ namespace DataAccessLayer
 {
     public class ConnectionStrings
     {
-        public static string ConStr = @"Data Source =.\SQLEXPRESS; Initial Catalog = BTE_THERAPY; Integrated Security = True";
+        public static string ConStr = @"data source =.\; Initial Catalog = BTE_THERAPY; Integrated Security = True";
     }
 }

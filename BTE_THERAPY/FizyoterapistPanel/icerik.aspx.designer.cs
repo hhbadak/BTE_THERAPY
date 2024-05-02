@@ -24,13 +24,13 @@ namespace BTE_THERAPY.FizyoterapistPanel
         protected global::System.Web.UI.WebControls.TextBox tb_egzersizAdi;
 
         /// <summary>
-        /// fu_video control.
+        /// tb_videoUrl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload fu_video;
+        protected global::System.Web.UI.WebControls.TextBox tb_videoUrl;
 
         /// <summary>
         /// tb_baslik control.

@@ -1,10 +1,6 @@
 ﻿using DataAccessLayer;
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace BTE_THERAPY.FizyoterapistPanel
@@ -12,6 +8,7 @@ namespace BTE_THERAPY.FizyoterapistPanel
     public partial class icerik : System.Web.UI.Page
     {
         DataModel dm = new DataModel();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -25,115 +22,97 @@ namespace BTE_THERAPY.FizyoterapistPanel
 
         protected void lbtn_ekle_Click(object sender, EventArgs e)
         {
-            if (Convert.ToInt32(ddl_kategoriler.SelectedItem.Value) != 0)
+            if (ddl_kategoriler.SelectedItem != null && ddl_kategoriler.SelectedValue != "0")
             {
-                Egzersiz egzersiz = new Egzersiz();
-                egzersiz.Ad = tb_egzersizAdi.Text;
-                egzersiz.Kategori_ID = Convert.ToInt32(ddl_kategoriler.SelectedItem.Value);
-                egzersiz.Baslik = tb_baslik.Text;
-                egzersiz.Icerik = tb_icerik.InnerText;
+                Egzersiz egzersiz = new Egzersiz
+                {
+                    Ad = tb_egzersizAdi.Text,
+                    Kategori_ID = Convert.ToInt32(ddl_kategoriler.SelectedItem.Value),
+                    Baslik = tb_baslik.Text,
+                    Icerik = tb_icerik.InnerText
+                };
+
+                // Resim dosyası yüklendiğinde
                 if (fu_resim.HasFile)
                 {
-                    FileInfo fi = new FileInfo(fu_resim.FileName);
-                    if (fi.Extension == ".jpg" || fi.Extension == ".png")
+                    string resimUzantisi = Path.GetExtension(fu_resim.FileName);
+                    if (resimUzantisi == ".jpg" || resimUzantisi == ".png")
                     {
-                        string uzanti = fi.Extension;
-                        string isim = Guid.NewGuid().ToString();
-                        egzersiz.Foto = isim + uzanti;
-                        fu_resim.SaveAs(Server.MapPath("../FizyoterapistPanel/img/icerik" + isim + uzanti));
-                        if (dm.IcerikEkle(egzersiz))
-                        {
-                            //pnl_basarisiz.Visible = false;
-                            //pnl_basarili.Visible = true;
-                            tb_baslik.Text = tb_icerik.InnerText = tb_egzersizAdi.Text = "";
-                            ddl_kategoriler.SelectedValue = "0";
-                        }
-                        else
-                        {
-                            //pnl_basarisiz.Visible = true;
-                            //pnl_basarili.Visible = false;
-                            //lbl_mesaj.Text = "Makale Ekleme Başarısız";
-                        }
+                        string resimIsim = Guid.NewGuid().ToString();
+                        string resimYolu = "../FizyoterapistPanel/img/icerik/" + resimIsim + resimUzantisi;
+                        egzersiz.Foto = resimYolu;
+
+                        // Resmi kaydet
+                        fu_resim.SaveAs(Server.MapPath(resimYolu));
                     }
                     else
                     {
-                        //pnl_basarisiz.Visible = true;
-                        //pnl_basarili.Visible = false;
-                        //lbl_mesaj.Text = "Resim uzantısı sadece .jpg veya .png olmalıdır";
+                        // Resim uzantısı geçersiz
+                        // Hata mesajı veya işlem yapılabilir
                     }
                 }
-                else
+
+                // YouTube URL'si eklendiğinde
+                if (!string.IsNullOrEmpty(tb_videoUrl.Text))
                 {
-                    //mak.Resim = "none.png";
-                    //if (dm.MakaleEkle(mak))
-                    //{
-                    //    pnl_basarisiz.Visible = false;
-                    //    pnl_basarili.Visible = true;
-                    //    tb_baslik.Text = tb_icerik.Text = tb_ozet.Text = "";
-                    //    cb_yayinda.Checked = false;
-                    //    ddl_kategoriler.SelectedValue = "0";
-                    //}
-                    //else
-                    //{
-                    //    pnl_basarisiz.Visible = true;
-                    //    pnl_basarili.Visible = false;
-                    //    lbl_mesaj.Text = "Makale Ekleme Başarısız";
-                    //}
-                }
-                if (fu_video.HasFile)
-                {
-                    FileInfo fiv = new FileInfo(fu_video.FileName);
-                    if (fiv.Extension == ".mp4")
+                    // YouTube URL'sini al
+                    string youtubeUrl = tb_videoUrl.Text;
+
+                    // YouTube URL'sinden video ID'sini al
+                    string videoId = GetYouTubeVideoId(youtubeUrl);
+
+                    // Egzersize video ID'sini ata
+                    if (!string.IsNullOrEmpty(videoId))
                     {
-                        string uzanti = fiv.Extension;
-                        string isim = Guid.NewGuid().ToString();
-                        egzersiz.Video = isim + uzanti;
-                        fu_resim.SaveAs(Server.MapPath("../FizyoterapistPanel/img/icerik" + isim + uzanti));
-                        if (dm.IcerikEkle(egzersiz))
-                        {
-                            //pnl_basarisiz.Visible = false;
-                            //pnl_basarili.Visible = true;
-                            tb_baslik.Text = tb_icerik.InnerText = tb_egzersizAdi.Text = "";
-                            ddl_kategoriler.SelectedValue = "0";
-                        }
-                        else
-                        {
-                            //pnl_basarisiz.Visible = true;
-                            //pnl_basarili.Visible = false;
-                            //lbl_mesaj.Text = "Makale Ekleme Başarısız";
-                        }
+                        egzersiz.Video = videoId;
                     }
                     else
                     {
-                        //pnl_basarisiz.Visible = true;
-                        //pnl_basarili.Visible = false;
-                        //lbl_mesaj.Text = "Resim uzantısı sadece .jpg veya .png olmalıdır";
+                        // YouTube URL'si geçersiz
+                        // Hata mesajı veya işlem yapılabilir
                     }
+                }
+
+                // İçerik eklemeyi dene
+                if (dm.IcerikEkle(egzersiz))
+                {
+                    // İçerik başarıyla eklendi
+                    // Başka işlemler veya mesaj gösterebilirsiniz
                 }
                 else
                 {
-                    //mak.Resim = "none.png";
-                    //if (dm.MakaleEkle(mak))
-                    //{
-                    //    pnl_basarisiz.Visible = false;
-                    //    pnl_basarili.Visible = true;
-                    //    tb_baslik.Text = tb_icerik.Text = tb_ozet.Text = "";
-                    //    cb_yayinda.Checked = false;
-                    //    ddl_kategoriler.SelectedValue = "0";
-                    //}
-                    //else
-                    //{
-                    //    pnl_basarisiz.Visible = true;
-                    //    pnl_basarili.Visible = false;
-                    //    lbl_mesaj.Text = "Makale Ekleme Başarısız";
-                    //}
+                    // İçerik eklenemedi
+                    // Hata mesajı veya işlem yapılabilir
                 }
             }
             else
             {
-                //pnl_basarisiz.Visible = true;
-                //pnl_basarili.Visible = false;
-                //lbl_mesaj.Text = "Kategori seçimi yapmalısınız";
+                // Kategori seçilmemiş
+                // Hata mesajı veya işlem yapılabilir
+            }
+        }
+
+        // YouTube URL'sinden video ID'sini alma
+        private string GetYouTubeVideoId(string url)
+        {
+            try
+            {
+                Uri uri = new Uri(url);
+                string host = uri.Host;
+                string query = uri.Query;
+                if (host.Contains("youtube") && query.Contains("v="))
+                {
+                    int startIndex = query.IndexOf("v=") + 2;
+                    int length = query.Length - startIndex;
+                    string videoId = query.Substring(startIndex, length);
+                    return videoId;
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hata: " + ex.Message);
+                return null;
             }
         }
     }

@@ -1,8 +1,6 @@
 ﻿using DataAccessLayer;
 using System;
-using System.Collections.Generic;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web;
@@ -14,12 +12,14 @@ namespace BTE_THERAPY.FizyoterapistPanel
     public partial class giris : System.Web.UI.Page
     {
         DataModel dm = new DataModel();
-        SqlConnection baglanti = new SqlConnection(@"data source = .\;initial catalog=BTE_THERAPY;integrated security=True");
+        SqlConnection con = new SqlConnection(ConnectionStrings.ConStr);
+        SqlDataReader dr;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            // Sayfa yüklenirken yapılacak işlemler
         }
+
         private string HashleSifre(string sifre)
         {
             using (SHA256 sha256Hash = SHA256.Create())
@@ -36,73 +36,81 @@ namespace BTE_THERAPY.FizyoterapistPanel
 
         protected void lbtn_giris_Click(object sender, EventArgs e)
         {
-            baglanti.Open();
-            SqlCommand komut = new SqlCommand("SELECT * FROM Fizyoterapist WHERE Email=@P1", baglanti); // E-postaya göre kullanıcıyı seç
-
-            komut.Parameters.AddWithValue("@P1", tb_email.Text);
-            SqlDataReader dr = komut.ExecuteReader();
-
-            if (!string.IsNullOrEmpty(tb_email.Text) && !string.IsNullOrEmpty(tb_parola.Text))
+            try
             {
-                
-                Fizyoterapist f = dm.FizyoterapistGiris(tb_email.Text, tb_parola.Text);
-                Hastalar h = dm.HastaGiris(tb_email.Text, tb_parola.Text);
-                if (dr.Read()) // Veri varsa okuma yap
-                {
-                    string hashliSifre = HashleSifre(tb_parola.Text); // Giriş şifresini hashle
-                string dbHashliSifre = dr["Parola"].ToString(); // Veritabanından gelen hashlenmiş şifreyi al
+                con.Open();
+                SqlCommand komut = new SqlCommand("SELECT * FROM Fizyoterapist WHERE Email=@P1", con); // E-postaya göre kullanıcıyı seç
+                komut.Parameters.AddWithValue("@P1", tb_email.Text);
 
-                if (f != null)
+                dr = komut.ExecuteReader(); // SqlDataReader nesnesine değer ataması yap
+
+                if (!string.IsNullOrEmpty(tb_email.Text) && !string.IsNullOrEmpty(tb_parola.Text))
                 {
-                    
-                    if (f.Durum && hashliSifre == dbHashliSifre)
+                    Fizyoterapist f = dm.FizyoterapistGiris(tb_email.Text, tb_parola.Text);
+                    Hastalar h = dm.HastaGiris(tb_email.Text, tb_parola.Text);
+
+                    if (dr.Read()) // Veri varsa okuma yap
                     {
-                        Session["fizyoterapist"] = f;
-                        Response.Redirect("../FizyoterapistPanel/index.aspx");
+                        string hashliSifre = HashleSifre(tb_parola.Text); // Giriş şifresini hashle
+                        string dbHashliSifre = dr["Parola"].ToString(); // Veritabanından gelen hashlenmiş şifreyi al
+
+                        if (f != null)
+                        {
+                            if (f.Durum && hashliSifre == dbHashliSifre)
+                            {
+                                Session["fizyoterapist"] = f;
+                                Response.Redirect("../FizyoterapistPanel/index.aspx");
+                            }
+                            else
+                            {
+                                string script = "alert('Kullanıcı Hesabınız Aktif değil veya giriş bilgileriniz hatalı.');";
+                                ScriptManager.RegisterStartupScript(this, GetType(), "GirisHataScript", script, true);
+                            }
+                        }
+                        else if (h != null)
+                        {
+                            if (h.Durum && hashliSifre == dbHashliSifre)
+                            {
+                                Session["hasta"] = h;
+                                Response.Redirect("../HastaPanel/index.aspx");
+                            }
+                            else
+                            {
+                                string script = "alert('Kullanıcı Hesabınız Aktif değil veya giriş bilgileriniz hatalı.');";
+                                ScriptManager.RegisterStartupScript(this, GetType(), "GirisHataScript", script, true);
+                            }
+                        }
+                        else
+                        {
+                            string script = "alert('Kullanıcı Bulunamadı.');";
+                            ScriptManager.RegisterStartupScript(this, GetType(), "GirisHataScript", script, true);
+                        }
                     }
                     else
                     {
-                        //pnl_hata.Visible = true;
-                        //lbl_hata.Text = "Kullanıcı Hesabınız Aktif değil";
+                        string script = "alert('Kullanıcı Bulunamadı.');";
+                        ScriptManager.RegisterStartupScript(this, GetType(), "GirisHataScript", script, true);
                     }
                 }
                 else
                 {
-                    //pnl_hata.Visible = true;
-                    //lbl_hata.Text = "Kullanıcı Bulunamadı";
-                }
-                if (h != null)
-                {
-                    if (h.Durum && hashliSifre == dbHashliSifre)
-                    {
-                        Session["hasta"] = h;
-                        Response.Redirect("../HastaPanel/index.aspx");
-                    }
-                    else
-                    {
-                        //pnl_hata.Visible = true;
-                        //lbl_hata.Text = "Kullanıcı Hesabınız Aktif değil";
-                    }
-                }
-                else
-                {
-                    //pnl_hata.Visible = true;
-                    //lbl_hata.Text = "Kullanıcı Bulunamadı";
+                    string script = "alert('Kullanıcı Adı ve Şifre Boş olamaz.');";
+                    ScriptManager.RegisterStartupScript(this, GetType(), "GirisHataScript", script, true);
                 }
             }
-            else
+            catch (Exception ex)
             {
-                //pnl_hata.Visible = true;
-                //lbl_hata.Text = "Kullanıcı Adı ve Şifre Boş olamaz";
+                // Hata yakalanırsa buraya düşer
+                string script = "alert('Hata: " + ex.Message + "');";
+                ScriptManager.RegisterStartupScript(this, GetType(), "GirisHataScript", script, true);
             }
-            }
-            else // Veri bulunamadıysa
+            finally
             {
-                //pnl_hata.Visible = true;
-                //lbl_hata.Text = "Kullanıcı Bulunamadı";
+                if (dr != null && !dr.IsClosed)
+                    dr.Close(); // SqlDataReader nesnesini kapat
+                if (con != null && con.State != System.Data.ConnectionState.Closed)
+                    con.Close(); // Bağlantıyı kapat
             }
-            dr.Close(); // SqlDataReader nesnesini kapat
-            baglanti.Close(); // Bağlantıyı kapat
         }
     }
 }

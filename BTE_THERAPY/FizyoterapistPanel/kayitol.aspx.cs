@@ -54,7 +54,7 @@ namespace BTE_THERAPY.FizyoterapistPanel
 
                 if (etkilenenSatirSayisi > 0)
                 {
-                    string script = "alert('Kayıt işlemi başarıyla tamamlandı. Giriş yapabilirsiniz.'); window.location = 'GirişSayfasi.aspx';";
+                    string script = "alert('Kayıt işlemi başarıyla tamamlandı. Giriş yapabilirsiniz.'); window.location = 'giris.aspx';";
                     ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
                 }
                 else
