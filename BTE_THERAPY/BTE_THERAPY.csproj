@@ -43,6 +43,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevExpress.Web.ASPxThemes.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.Resources.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -86,6 +89,7 @@
     <Content Include="FizyoterapistPanel\index.aspx" />
     <Content Include="FizyoterapistPanel\js\app.js" />
     <Content Include="FizyoterapistPanel\js\app.js.LICENSE.txt" />
+    <Content Include="FizyoterapistPanel\kayitol.aspx" />
     <Content Include="HastaPanel\css\egzersizkarti.css" />
     <Content Include="HastaPanel\fotolar\foto.png" />
     <Content Include="HastaPanel\index.aspx" />
@@ -108,6 +112,7 @@
     <Content Include="TemelSayfalar\img\testimonial-1.jpg" />
     <Content Include="TemelSayfalar\img\testimonial-2.jpg" />
     <Content Include="TemelSayfalar\img\testimonial-3.jpg" />
+    <Content Include="TemelSayfalar\img\whatsapp.png" />
     <Content Include="TemelSayfalar\js\main.js" />
     <Content Include="TemelSayfalar\lib\animate\animate.css" />
     <Content Include="TemelSayfalar\lib\animate\animate.min.css" />
@@ -172,6 +177,13 @@
     </Compile>
     <Compile Include="FizyoterapistPanel\index.Master.designer.cs">
       <DependentUpon>index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="FizyoterapistPanel\kayitol.aspx.cs">
+      <DependentUpon>kayitol.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FizyoterapistPanel\kayitol.aspx.designer.cs">
+      <DependentUpon>kayitol.aspx</DependentUpon>
     </Compile>
     <Compile Include="HastaPanel\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>
@@ -327,7 +339,9 @@
       <Name>DataAccessLayer</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

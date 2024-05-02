@@ -1,38 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\",
+  "WorkspaceRootPath": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\bte_therapy\\temelsayfalar\\temel.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\temelsayfalar\\temel.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\bte_therapy\\temelsayfalar\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\temelsayfalar\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\bte_therapy\\hastapanel\\css\\egzersizkarti.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\hastapanel\\css\\egzersizkarti.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\bte_therapy\\fizyoterapistpanel\\icerik.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\fizyoterapistpanel\\icerik.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\bte_therapy\\hastapanel\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\hastapanel\\index.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\bte_therapy\\hastapanel\\index.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
-      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\hastapanel\\index.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\bte_therapy\\fizyoterapistpanel\\icerik.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\fizyoterapistpanel\\icerik.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|c:\\users\\emree\\onedrive\\belgeler\\github\\bte_therapy\\bte_therapy\\fizyoterapistpanel\\giris.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|c:\\users\\batuh\\documents\\github\\bte_therapy\\bte_therapy\\fizyoterapistpanel\\giris.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\fizyoterapistpanel\\giris.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\bte_therapy\\fizyoterapistpanel\\giris.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\fizyoterapistpanel\\giris.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\dataaccesslayer\\datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\datamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\dataaccesslayer\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\connectionstrings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\dataaccesslayer\\hastalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4D50C3E3-C336-4755-8C63-EB96E38067B7}|DataAccessLayer\\DataAccessLayer.csproj|solutionrelative:dataaccesslayer\\hastalar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\bte_therapy\\temelsayfalar\\anasayfa.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\temelsayfalar\\anasayfa.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\bte_therapy\\temelsayfalar\\temel.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{D4A908FC-3E22-46EC-85F7-DFFE0C4AC2CE}|BTE_THERAPY\\BTE_THERAPY.csproj|solutionrelative:bte_therapy\\temelsayfalar\\temel.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,111 +38,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "style.css",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\css\\style.css",
-              "RelativeDocumentMoniker": "BTE_THERAPY\\TemelSayfalar\\css\\style.css",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\css\\style.css",
-              "RelativeToolTip": "BTE_THERAPY\\TemelSayfalar\\css\\style.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-09T20:37:42.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Temel.Master",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\Temel.Master",
-              "RelativeDocumentMoniker": "BTE_THERAPY\\TemelSayfalar\\Temel.Master",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\Temel.Master",
-              "RelativeToolTip": "BTE_THERAPY\\TemelSayfalar\\Temel.Master",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-09T20:34:36.198Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "egzersizkarti.css",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\HastaPanel\\css\\egzersizkarti.css",
-              "RelativeDocumentMoniker": "BTE_THERAPY\\HastaPanel\\css\\egzersizkarti.css",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\HastaPanel\\css\\egzersizkarti.css",
-              "RelativeToolTip": "BTE_THERAPY\\HastaPanel\\css\\egzersizkarti.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-04-09T20:21:58.016Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "icerik.aspx",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\FizyoterapistPanel\\icerik.aspx",
-              "RelativeDocumentMoniker": "BTE_THERAPY\\FizyoterapistPanel\\icerik.aspx",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\FizyoterapistPanel\\icerik.aspx",
-              "RelativeToolTip": "BTE_THERAPY\\FizyoterapistPanel\\icerik.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-09T19:31:28.493Z",
-              "EditorCaption": ""
+              "Title": "DataModel.cs",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\DataModel.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\DataModel.cs",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\DataModel.cs",
+              "RelativeToolTip": "DataAccessLayer\\DataModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T09:04:34.888Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "index.aspx",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\HastaPanel\\index.aspx",
-              "RelativeDocumentMoniker": "BTE_THERAPY\\HastaPanel\\index.aspx",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\HastaPanel\\index.aspx",
-              "RelativeToolTip": "BTE_THERAPY\\HastaPanel\\index.aspx",
+              "Title": "Hastalar.cs",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Hastalar.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\Hastalar.cs",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\Hastalar.cs",
+              "RelativeToolTip": "DataAccessLayer\\Hastalar.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-01T09:04:02.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Temel.Master",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\Temel.Master",
+              "RelativeDocumentMoniker": "BTE_THERAPY\\TemelSayfalar\\Temel.Master",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\Temel.Master",
+              "RelativeToolTip": "BTE_THERAPY\\TemelSayfalar\\Temel.Master",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-09T19:30:32.672Z",
+              "WhenOpened": "2024-04-30T19:21:12.555Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "giris.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\FizyoterapistPanel\\giris.aspx.cs",
+              "RelativeDocumentMoniker": "BTE_THERAPY\\FizyoterapistPanel\\giris.aspx.cs",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\FizyoterapistPanel\\giris.aspx.cs",
+              "RelativeToolTip": "BTE_THERAPY\\FizyoterapistPanel\\giris.aspx.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAAAhwDAAAABKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T17:11:07.476Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "index.Master",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\HastaPanel\\index.Master",
-              "RelativeDocumentMoniker": "BTE_THERAPY\\HastaPanel\\index.Master",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\HastaPanel\\index.Master",
-              "RelativeToolTip": "BTE_THERAPY\\HastaPanel\\index.Master",
+              "Title": "AnaSayfa.aspx",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\AnaSayfa.aspx",
+              "RelativeDocumentMoniker": "BTE_THERAPY\\TemelSayfalar\\AnaSayfa.aspx",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\TemelSayfalar\\AnaSayfa.aspx",
+              "RelativeToolTip": "BTE_THERAPY\\TemelSayfalar\\AnaSayfa.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-04-09T19:29:35.621Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T19:21:33.44Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "icerik.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\FizyoterapistPanel\\icerik.aspx.cs",
-              "RelativeDocumentMoniker": "BTE_THERAPY\\FizyoterapistPanel\\icerik.aspx.cs",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\FizyoterapistPanel\\icerik.aspx.cs",
-              "RelativeToolTip": "BTE_THERAPY\\FizyoterapistPanel\\icerik.aspx.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAowAAAAAAAAAAA",
+              "DocumentIndex": 3,
+              "Title": "ConnectionStrings.cs",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\ConnectionStrings.cs",
+              "RelativeDocumentMoniker": "DataAccessLayer\\ConnectionStrings.cs",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\DataAccessLayer\\ConnectionStrings.cs",
+              "RelativeToolTip": "DataAccessLayer\\ConnectionStrings.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T19:02:38.61Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T17:09:06.193Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "giris.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\FizyoterapistPanel\\giris.aspx.cs",
-              "RelativeDocumentMoniker": "BTE_THERAPY\\FizyoterapistPanel\\giris.aspx.cs",
-              "ToolTip": "C:\\Users\\emree\\OneDrive\\Belgeler\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\FizyoterapistPanel\\giris.aspx.cs",
-              "RelativeToolTip": "BTE_THERAPY\\FizyoterapistPanel\\giris.aspx.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAWwAwAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-09T19:02:38.618Z",
-              "EditorCaption": ""
+              "DocumentIndex": 1,
+              "Title": "giris.aspx",
+              "DocumentMoniker": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\FizyoterapistPanel\\giris.aspx",
+              "RelativeDocumentMoniker": "BTE_THERAPY\\FizyoterapistPanel\\giris.aspx",
+              "ToolTip": "C:\\Users\\batuh\\Documents\\GitHub\\BTE_THERAPY\\BTE_THERAPY\\FizyoterapistPanel\\giris.aspx",
+              "RelativeToolTip": "BTE_THERAPY\\FizyoterapistPanel\\giris.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-04-30T17:02:36.177Z"
             }
           ]
         }

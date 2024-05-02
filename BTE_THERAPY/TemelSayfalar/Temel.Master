@@ -50,13 +50,19 @@
                 <a href="anasayfa.aspx" class="nav-item nav-link">AnaSayfa</a>
                 <a href="Hakkimizda.aspx" class="nav-item nav-link">Hakkımızda</a>
                 <a href="İletisim.aspx" class="nav-item nav-link">İletişim</a>
-                <a href="../FizyoterapistPanel/giris.aspx" class="nav-item nav-link">Giriş Yap</a>
-                <a href="kayit.aspx" class="nav-item nav-link">Kayıt Ol</a>
+                <asp:HyperLink ID="navbar_login" CssClass="nav-item nav-link" runat="server" NavigateUrl="../FizyoterapistPanel/giris.aspx">Giriş Yap</asp:HyperLink>
+                <asp:HyperLink ID="navbar_kayitol" CssClass="nav-item nav-link" runat="server" NavigateUrl="../FizyoterapistPanel/kayitol.aspx">Kayıt Ol</asp:HyperLink>
+                <asp:HyperLink ID="navbar_kullanici_panel" CssClass="nav-item nav-link" runat="server" NavigateUrl="../HastaPanel/index.aspx">Hasta Panel</asp:HyperLink>
+                <asp:HyperLink ID="navbar_fizyoterapist_panel" CssClass="nav-item nav-link" runat="server" NavigateUrl="../FizyoterapistPanel/index.aspx">Admin Panel</asp:HyperLink>
+                <asp:HyperLink ID="navbar_cikisyap" CssClass="nav-item nav-link" runat="server" NavigateUrl="../HastaPanel/index.aspx">Çıkış Yap</asp:HyperLink>
+
             </div>
         </div>
     </nav>
             <!-- Navbar -->
+            
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                
             </asp:ContentPlaceHolder>
             <!-- Footer -->
             <div class="container-fluid bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">

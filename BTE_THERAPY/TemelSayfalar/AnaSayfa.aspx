@@ -1,5 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/TemelSayfalar/Temel.Master" AutoEventWireup="true" CodeBehind="AnaSayfa.aspx.cs" Inherits="BTE_THERAPY.TemelSayfalar.AnaSayfa" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+     
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <!-- Slider -->
