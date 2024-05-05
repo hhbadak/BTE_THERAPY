@@ -37,6 +37,30 @@ namespace BTE_THERAPY.FizyoterapistPanel
             string sifre = tb_parola.Text;
             string sifretekrar = tb_parolatekrar.Text;
             string hashliSifre = HashleSifre(sifre);
+            string dogumTarihiStr = tb_dogumtarihi.Text;
+
+                 DateTime? dogumTarihi = null;
+            if (!string.IsNullOrEmpty(dogumTarihiStr) && DateTime.TryParse(dogumTarihiStr, out DateTime parsedDate))
+            {
+                dogumTarihi = parsedDate;
+            }
+            // E-posta doğrulaması
+            if (!Email.Contains("@"))
+            {
+                string script = "alert('Geçerli bir e-posta adresi giriniz.');";
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
+                baglanti.Close();
+                return;
+            }
+
+            // İsim doğrulaması
+            if (!IsValidName(AdSoyad))
+            {
+                string script = "alert('Geçerli bir isim giriniz.');";
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
+                baglanti.Close();
+                return;
+            }
 
             if (sifre != sifretekrar)
             {
@@ -45,10 +69,11 @@ namespace BTE_THERAPY.FizyoterapistPanel
             }
             else
             {
-                SqlCommand komut = new SqlCommand("INSERT INTO dbo.Fizyoterapist (AdSoyad, Email, Parola) VALUES (@AdSoyad, @Email, @Parola)", baglanti);
+                SqlCommand komut = new SqlCommand("INSERT INTO dbo.Fizyoterapist (AdSoyad, Email, Parola, DogumTarih) VALUES (@AdSoyad, @Email, @Parola, @DogumTarih)", baglanti);
                 komut.Parameters.AddWithValue("@AdSoyad", AdSoyad);
                 komut.Parameters.AddWithValue("@Email", Email);
                 komut.Parameters.AddWithValue("@Parola", hashliSifre);
+                komut.Parameters.AddWithValue("@DogumTarih", dogumTarihi.HasValue ? (object)dogumTarihi.Value : DBNull.Value);
 
                 int etkilenenSatirSayisi = komut.ExecuteNonQuery();
 
@@ -64,6 +89,19 @@ namespace BTE_THERAPY.FizyoterapistPanel
                 }
             }
             baglanti.Close();
+        }
+
+        // İsim doğrulama işlevi
+        private bool IsValidName(string name)
+        {
+            foreach (char c in name)
+            {
+                if (!char.IsLetter(c) && c != ' ')
+                {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }

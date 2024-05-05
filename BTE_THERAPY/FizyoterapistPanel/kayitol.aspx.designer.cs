@@ -60,6 +60,15 @@ namespace BTE_THERAPY.FizyoterapistPanel
         protected global::System.Web.UI.WebControls.TextBox tb_parolatekrar;
 
         /// <summary>
+        /// tb_dogumtarihi control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_dogumtarihi;
+
+        /// <summary>
         /// lbtn_kayitol control.
         /// </summary>
         /// <remarks>

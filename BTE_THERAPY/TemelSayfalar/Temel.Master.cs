@@ -11,6 +11,10 @@ namespace BTE_THERAPY.TemelSayfalar
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            UpdateNavbar();
+        }
+        public void UpdateNavbar()
+        {
             if (Session["fizyoterapist"] != null)
             {
                 UpdateNavbarFizyoterapist();
@@ -24,7 +28,8 @@ namespace BTE_THERAPY.TemelSayfalar
                 UpdateNavbarNormal();
             }
         }
-        public void UpdateNavbarHasta()
+
+                public void UpdateNavbarHasta()
         {
             navbar_login.Visible = false;
             navbar_kayitol.Visible = false;

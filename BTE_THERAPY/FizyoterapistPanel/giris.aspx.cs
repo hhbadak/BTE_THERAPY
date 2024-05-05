@@ -12,12 +12,11 @@ namespace BTE_THERAPY.FizyoterapistPanel
     public partial class giris : System.Web.UI.Page
     {
         DataModel dm = new DataModel();
-        SqlConnection con = new SqlConnection(ConnectionStrings.ConStr);
         SqlDataReader dr;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            // Sayfa yüklenirken yapılacak işlemler
+
         }
 
         private string HashleSifre(string sifre)
@@ -36,27 +35,15 @@ namespace BTE_THERAPY.FizyoterapistPanel
 
         protected void lbtn_giris_Click(object sender, EventArgs e)
         {
-            try
-            {
-                con.Open();
-                SqlCommand komut = new SqlCommand("SELECT * FROM Fizyoterapist WHERE Email=@P1", con); // E-postaya göre kullanıcıyı seç
-                komut.Parameters.AddWithValue("@P1", tb_email.Text);
-
-                dr = komut.ExecuteReader(); // SqlDataReader nesnesine değer ataması yap
-
+            
                 if (!string.IsNullOrEmpty(tb_email.Text) && !string.IsNullOrEmpty(tb_parola.Text))
                 {
                     Fizyoterapist f = dm.FizyoterapistGiris(tb_email.Text, tb_parola.Text);
                     Hastalar h = dm.HastaGiris(tb_email.Text, tb_parola.Text);
 
-                    if (dr.Read()) // Veri varsa okuma yap
-                    {
-                        string hashliSifre = HashleSifre(tb_parola.Text); // Giriş şifresini hashle
-                        string dbHashliSifre = dr["Parola"].ToString(); // Veritabanından gelen hashlenmiş şifreyi al
-
                         if (f != null)
                         {
-                            if (f.Durum && hashliSifre == dbHashliSifre)
+                            if (f.Durum)
                             {
                                 Session["fizyoterapist"] = f;
                                 Response.Redirect("../FizyoterapistPanel/index.aspx");
@@ -69,7 +56,7 @@ namespace BTE_THERAPY.FizyoterapistPanel
                         }
                         else if (h != null)
                         {
-                            if (h.Durum && hashliSifre == dbHashliSifre)
+                            if (h.Durum)
                             {
                                 Session["hasta"] = h;
                                 Response.Redirect("../HastaPanel/index.aspx");
@@ -86,31 +73,17 @@ namespace BTE_THERAPY.FizyoterapistPanel
                             ScriptManager.RegisterStartupScript(this, GetType(), "GirisHataScript", script, true);
                         }
                     }
-                    else
-                    {
-                        string script = "alert('Kullanıcı Bulunamadı.');";
-                        ScriptManager.RegisterStartupScript(this, GetType(), "GirisHataScript", script, true);
-                    }
-                }
                 else
                 {
                     string script = "alert('Kullanıcı Adı ve Şifre Boş olamaz.');";
                     ScriptManager.RegisterStartupScript(this, GetType(), "GirisHataScript", script, true);
                 }
-            }
-            catch (Exception ex)
-            {
-                // Hata yakalanırsa buraya düşer
-                string script = "alert('Hata: " + ex.Message + "');";
-                ScriptManager.RegisterStartupScript(this, GetType(), "GirisHataScript", script, true);
-            }
-            finally
-            {
-                if (dr != null && !dr.IsClosed)
-                    dr.Close(); // SqlDataReader nesnesini kapat
-                if (con != null && con.State != System.Data.ConnectionState.Closed)
-                    con.Close(); // Bağlantıyı kapat
-            }
+            
+        }
+
+        protected void lbtn_kayit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("../FizyoterapistPanel/kayitol.aspx");
         }
     }
 }

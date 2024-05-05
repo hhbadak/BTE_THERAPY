@@ -52,15 +52,20 @@
                                             <label class="form-label">Parola Tekrar</label>
                                             <asp:TextBox ID="tb_parolatekrar" runat="server" type="password" CssClass="form-control form-control-lg" placeholder="Parolanızı Tekrar Giriniz"></asp:TextBox>
                                         </div>
+                                        <div class="mb-3">
+                                            <label class="form-label">Doğum Tarihi</label>
+                                            <asp:TextBox ID="tb_dogumtarihi" runat="server" type="password" CssClass="form-control form-control-lg" placeholder="Doğum Tarihinizi Girinz"></asp:TextBox>
+                                        </div>
                                         <div>
                                             <asp:LinkButton ID="lbtn_kayitol" runat="server" CssClass="btn btn-lg btn-primary" OnClick="lbtn_kayitol_Click">Kayıt Ol</asp:LinkButton>
                                         </div>
+
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
-        </div>
+                </div>
     </main>
 
     <script src="../FizyoterapistPanel/js/app.js"></script>

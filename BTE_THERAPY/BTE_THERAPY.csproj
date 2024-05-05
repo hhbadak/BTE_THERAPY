@@ -94,6 +94,7 @@
     <Content Include="HastaPanel\fotolar\foto.png" />
     <Content Include="HastaPanel\index.aspx" />
     <Content Include="TemelSayfalar\AnaSayfa.aspx" />
+    <Content Include="TemelSayfalar\cikis.aspx" />
     <Content Include="TemelSayfalar\css\bootstrap.min.css" />
     <Content Include="TemelSayfalar\css\style.css" />
     <Content Include="TemelSayfalar\Hakkimizda.aspx" />
@@ -206,6 +207,13 @@
     </Compile>
     <Compile Include="TemelSayfalar\AnaSayfa.aspx.designer.cs">
       <DependentUpon>AnaSayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemelSayfalar\cikis.aspx.cs">
+      <DependentUpon>cikis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemelSayfalar\cikis.aspx.designer.cs">
+      <DependentUpon>cikis.aspx</DependentUpon>
     </Compile>
     <Compile Include="TemelSayfalar\Hakkimizda.aspx.cs">
       <DependentUpon>Hakkimizda.aspx</DependentUpon>

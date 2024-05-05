@@ -54,7 +54,7 @@
                 <asp:HyperLink ID="navbar_kayitol" CssClass="nav-item nav-link" runat="server" NavigateUrl="../FizyoterapistPanel/kayitol.aspx">Kayıt Ol</asp:HyperLink>
                 <asp:HyperLink ID="navbar_kullanici_panel" CssClass="nav-item nav-link" runat="server" NavigateUrl="../HastaPanel/index.aspx">Hasta Panel</asp:HyperLink>
                 <asp:HyperLink ID="navbar_fizyoterapist_panel" CssClass="nav-item nav-link" runat="server" NavigateUrl="../FizyoterapistPanel/index.aspx">Admin Panel</asp:HyperLink>
-                <asp:HyperLink ID="navbar_cikisyap" CssClass="nav-item nav-link" runat="server" NavigateUrl="../HastaPanel/index.aspx">Çıkış Yap</asp:HyperLink>
+                <asp:HyperLink ID="navbar_cikisyap" CssClass="nav-item nav-link" runat="server" NavigateUrl="../TemelSayfalar/cikis.aspx">Çıkış Yap</asp:HyperLink>
 
             </div>
         </div>

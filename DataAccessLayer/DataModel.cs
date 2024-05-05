@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,24 +19,35 @@ namespace DataAccessLayer
         }
         #region Fizyoterapist Giriş
 
+        private string HashleSifre(string sifre)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(sifre));
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+                }
+                return builder.ToString();
+            }
+        }
         public Fizyoterapist FizyoterapistGiris(string mail, string sifre)
         {
             try
             {
+                string hashliSifre = HashleSifre(sifre);
+
                 cmd.CommandText = "SELECT COUNT(*) FROM Fizyoterapist WHERE EMail = @mail AND Parola = @parola";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@mail", mail);
-                cmd.Parameters.AddWithValue("@parola", sifre);
+                cmd.Parameters.AddWithValue("@parola", hashliSifre);
                 con.Open();
                 int sayi = Convert.ToInt32(cmd.ExecuteScalar());
 
                 if (sayi > 0)
                 {
-                    cmd.CommandText = "SELECT ID, AdSoyad, Foto, EMail, Telefon, Cinsiyet, DogumTarih, KayitTarihi, Durum FROM Fizyoterapist WHERE EMail = @mail AND Parola = @sifre AND Durum = 1";
-                    cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("@mail", mail);
-                    cmd.Parameters.AddWithValue("@sifre", sifre);
-                    //con.Open();//SAKIN YAPMA
+                    cmd.CommandText = "SELECT ID, AdSoyad, Foto, EMail, Telefon, Cinsiyet, DogumTarih, KayitTarihi, Durum FROM Fizyoterapist WHERE EMail = @mail AND Parola = @parola AND Durum = 1";
                     SqlDataReader reader = cmd.ExecuteReader();
                     Fizyoterapist f = new Fizyoterapist();
                     while (reader.Read())
@@ -165,20 +177,18 @@ namespace DataAccessLayer
         {
             try
             {
+                string hashliSifre = HashleSifre(sifre);
+
                 cmd.CommandText = "SELECT COUNT(*) FROM Hastalar WHERE EMail = @mail AND Parola = @parola";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@mail", mail);
-                cmd.Parameters.AddWithValue("@parola", sifre);
+                cmd.Parameters.AddWithValue("@parola", hashliSifre);
                 con.Open();
                 int sayi = Convert.ToInt32(cmd.ExecuteScalar());
 
                 if (sayi > 0)
                 {
-                    cmd.CommandText = "SELECT ID, AdSoyad, Foto, EMail, Parola, Adres, Telefon, Cinsiyet, DogumTarih, KayitTarihi, Durum FROM Hastalar WHERE EMail = @mail AND Parola = @sifre AND Durum = 1";
-                    cmd.Parameters.Clear();
-                    cmd.Parameters.AddWithValue("@mail", mail);
-                    cmd.Parameters.AddWithValue("@sifre", sifre);
-                    //con.Open();//SAKIN YAPMA
+                    cmd.CommandText = "SELECT ID, AdSoyad, Foto, EMail, Parola, Adres, Telefon, Cinsiyet, DogumTarih, KayitTarihi, Durum FROM Hastalar WHERE EMail = @mail AND Parola = @parola AND Durum = 1";
                     SqlDataReader reader = cmd.ExecuteReader();
                     Hastalar h = new Hastalar();
                     while (reader.Read())

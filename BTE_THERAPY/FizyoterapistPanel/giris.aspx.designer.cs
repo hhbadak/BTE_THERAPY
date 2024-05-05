@@ -49,5 +49,14 @@ namespace BTE_THERAPY.FizyoterapistPanel
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.LinkButton lbtn_giris;
+
+        /// <summary>
+        /// lbtn_kayit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton lbtn_kayit;
     }
 }
