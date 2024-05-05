@@ -14,7 +14,7 @@
    
 
     <!-- Header -->
-    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s" id="enust">
         <div class="container py-5">
             <h1 class="display-3 text-white mb-3 animated slideInDown">HAKKIMIZDA</h1>
             <nav aria-label="breadcrumb animated slideInDown">
@@ -30,7 +30,7 @@
 
 
     <!-- Hakkımızda -->
-    <div class="container-xxl py-5">
+    <div class="container-xxl py-5" >
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
@@ -122,5 +122,5 @@
     </div>
     <!-- Özellikler -->
     <!-- En üste git -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <a href="#enust" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
 </asp:Content>

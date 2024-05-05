@@ -51,15 +51,32 @@
                                         <div class="mb-3">
                                             <label class="form-label">Parola Tekrar</label>
                                             <asp:TextBox ID="tb_parolatekrar" runat="server" type="password" CssClass="form-control form-control-lg" placeholder="Parolanızı Tekrar Giriniz"></asp:TextBox>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label">Doğum Tarihi</label>
-                                            <asp:TextBox ID="tb_dogumtarihi" runat="server" type="password" CssClass="form-control form-control-lg" placeholder="Doğum Tarihinizi Girinz"></asp:TextBox>
-                                        </div>
-                                        <div>
-                                            <asp:LinkButton ID="lbtn_kayitol" runat="server" CssClass="btn btn-lg btn-primary" OnClick="lbtn_kayitol_Click">Kayıt Ol</asp:LinkButton>
-                                        </div>
 
+
+                                            <div class="mb-3">
+                                                <label class="form-label">Cinsiyet Seçiniz</label>
+                                                <div class="form-check">
+                                                    <asp:RadioButton ID="rb_erkek" runat="server" GroupName="cinsiyet" CssClass="form-check-input" />
+                                                    <label class="form-check-label" for="rb_erkek">Erkek</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <asp:RadioButton ID="rb_kadin" runat="server" GroupName="cinsiyet" CssClass="form-check-input" />
+                                                    <label class="form-check-label" for="rb_kadin">Kadın</label>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label class="form-label">Adres</label>
+                                                <textarea id="ta_adres" runat="server" class="form-control form-control-lg" placeholder="Adresinizi giriniz"></textarea>
+                                            </div>
+
+                                            <div class="mb-3">
+                                                <label class="form-label">Telefon</label>
+                                                <asp:TextBox ID="tb_telefon" runat="server" CssClass="form-control form-control-lg" placeholder="Telefon numaranızı giriniz"></asp:TextBox>
+                                            </div>
+                                            <div>
+                                                <asp:LinkButton ID="lbtn_kayitol" runat="server" CssClass="btn btn-lg btn-primary" OnClick="lbtn_kayitol_Click">Kayıt Ol</asp:LinkButton>
+                                            </div>
                                     </form>
                                 </div>
                             </div>

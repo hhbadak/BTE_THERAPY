@@ -97,6 +97,7 @@
     <Content Include="TemelSayfalar\cikis.aspx" />
     <Content Include="TemelSayfalar\css\bootstrap.min.css" />
     <Content Include="TemelSayfalar\css\style.css" />
+    <Content Include="TemelSayfalar\css\wp.css" />
     <Content Include="TemelSayfalar\Hakkimizda.aspx" />
     <Content Include="TemelSayfalar\img\about-1.jpg" />
     <Content Include="TemelSayfalar\img\about-2.jpg" />
@@ -105,7 +106,12 @@
     <Content Include="TemelSayfalar\img\carousel-2.jpg" />
     <Content Include="TemelSayfalar\img\carousel-3.jpg" />
     <Content Include="TemelSayfalar\img\feature.jpg" />
+    <Content Include="TemelSayfalar\img\hakkimizda1.jpg" />
+    <Content Include="TemelSayfalar\img\hakkimizda2.jpg" />
     <Content Include="TemelSayfalar\img\header-page.jpg" />
+    <Content Include="TemelSayfalar\img\slider01.jpg" />
+    <Content Include="TemelSayfalar\img\slider02.jpg" />
+    <Content Include="TemelSayfalar\img\slider03.jpg" />
     <Content Include="TemelSayfalar\img\team-1.jpg" />
     <Content Include="TemelSayfalar\img\team-2.jpg" />
     <Content Include="TemelSayfalar\img\team-3.jpg" />

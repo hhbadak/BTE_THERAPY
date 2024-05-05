@@ -60,13 +60,40 @@ namespace BTE_THERAPY.FizyoterapistPanel
         protected global::System.Web.UI.WebControls.TextBox tb_parolatekrar;
 
         /// <summary>
-        /// tb_dogumtarihi control.
+        /// rb_erkek control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tb_dogumtarihi;
+        protected global::System.Web.UI.WebControls.RadioButton rb_erkek;
+
+        /// <summary>
+        /// rb_kadin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RadioButton rb_kadin;
+
+        /// <summary>
+        /// ta_adres control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea ta_adres;
+
+        /// <summary>
+        /// tb_telefon control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tb_telefon;
 
         /// <summary>
         /// lbtn_kayitol control.

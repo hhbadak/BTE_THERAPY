@@ -297,5 +297,47 @@ namespace DataAccessLayer
             }
         }
         #endregion
+        #region sayilar
+        public int ToplamHastaSayisi()
+        {
+            try
+            {
+                cmd.CommandText = "SELECT COUNT(*) FROM Hastalar";
+                cmd.Parameters.Clear();
+                con.Open();
+                int sayi = Convert.ToInt32(cmd.ExecuteScalar());
+                return sayi;
+            }
+            catch
+            {
+                return -1; // Hata durumunda -1 döndürülebilir.
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public int ToplamFizyoterapistSayisi()
+        {
+            try
+            {
+                cmd.CommandText = "SELECT COUNT(*) FROM Fizyoterapist";
+                cmd.Parameters.Clear();
+                con.Open();
+                int sayi = Convert.ToInt32(cmd.ExecuteScalar());
+                return sayi;
+            }
+            catch
+            {
+                return -1; // Hata durumunda -1 döndürülebilir.
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+        #endregion
+
     }
 }

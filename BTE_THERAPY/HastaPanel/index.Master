@@ -45,6 +45,7 @@
             </a>
 					</li>
 
+
 					<%--<li class="sidebar-item">
 						<a class="sidebar-link" href="../HastaPanel/hasta_takip.aspx">
               <i class="align-middle" data-feather="user"></i> <span class="align-middle">Hasta Takip</span>
@@ -56,6 +57,21 @@
               <i class="align-middle" data-feather="user"></i> <span class="align-middle">Hasta Takip</span>
             </a>
 					</li>--%>
+												<li class="sidebar-item">
+			<a class="sidebar-link" href="../TemelSayfalar/AnaSayfa.aspx">
+  <i class="align-middle" data-feather="user"></i> <span class="align-middle">AnaSayfa</span>
+</a>
+		</li>
+												<li class="sidebar-item">
+			<a class="sidebar-link" href="../TemelSayfalar/İletisim.aspx">
+  <i class="align-middle" data-feather="user"></i> <span class="align-middle">İletişim</span>
+</a>
+		</li>
+																	<li class="sidebar-item">
+			<a class="sidebar-link" href="../TemelSayfalar/Hakkimizda.aspx">
+  <i class="align-middle" data-feather="user"></i> <span class="align-middle">Hakkımızda</span>
+</a>
+		</li>
 
 					
 				</ul>

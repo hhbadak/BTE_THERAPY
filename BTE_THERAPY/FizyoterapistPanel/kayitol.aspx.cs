@@ -29,6 +29,7 @@ namespace BTE_THERAPY.FizyoterapistPanel
             }
         }
 
+
         protected void lbtn_kayitol_Click(object sender, EventArgs e)
         {
             baglanti.Open();
@@ -37,13 +38,23 @@ namespace BTE_THERAPY.FizyoterapistPanel
             string sifre = tb_parola.Text;
             string sifretekrar = tb_parolatekrar.Text;
             string hashliSifre = HashleSifre(sifre);
-            string dogumTarihiStr = tb_dogumtarihi.Text;
-
-                 DateTime? dogumTarihi = null;
-            if (!string.IsNullOrEmpty(dogumTarihiStr) && DateTime.TryParse(dogumTarihiStr, out DateTime parsedDate))
+            string adres = ta_adres.InnerText;
+            string telefon = tb_telefon.Text;
+            string cinsiyet = "";
+            bool cinsiyetBool = false;
+            if (rb_erkek.Checked)
             {
-                dogumTarihi = parsedDate;
+                cinsiyet = "Erkek";
+                cinsiyetBool = true;
             }
+            else if (rb_kadin.Checked)
+            {
+                cinsiyet = "Kadın";
+                cinsiyetBool = false;
+            }
+            DateTime kayitTarihi = DateTime.Now;
+            string kayitTarihiStr = kayitTarihi.ToString("yyyy-MM-dd HH:mm:ss");
+
             // E-posta doğrulaması
             if (!Email.Contains("@"))
             {
@@ -69,11 +80,14 @@ namespace BTE_THERAPY.FizyoterapistPanel
             }
             else
             {
-                SqlCommand komut = new SqlCommand("INSERT INTO dbo.Fizyoterapist (AdSoyad, Email, Parola, DogumTarih) VALUES (@AdSoyad, @Email, @Parola, @DogumTarih)", baglanti);
+                SqlCommand komut = new SqlCommand("INSERT INTO dbo.Hastalar (AdSoyad, Email, Parola, Cinsiyet, Adres, Telefon, KayitTarihi) VALUES (@AdSoyad, @Email, @Parola, @Cinsiyet, @Adres, @Telefon, @KayitTarihi)", baglanti);
                 komut.Parameters.AddWithValue("@AdSoyad", AdSoyad);
                 komut.Parameters.AddWithValue("@Email", Email);
                 komut.Parameters.AddWithValue("@Parola", hashliSifre);
-                komut.Parameters.AddWithValue("@DogumTarih", dogumTarihi.HasValue ? (object)dogumTarihi.Value : DBNull.Value);
+                komut.Parameters.AddWithValue("@Cinsiyet", cinsiyetBool);
+                komut.Parameters.AddWithValue("@Adres", adres);
+                komut.Parameters.AddWithValue("@Telefon", telefon);
+                komut.Parameters.AddWithValue("@KayitTarihi", kayitTarihiStr);
 
                 int etkilenenSatirSayisi = komut.ExecuteNonQuery();
 
