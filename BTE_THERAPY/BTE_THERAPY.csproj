@@ -99,6 +99,8 @@
     <Content Include="TemelSayfalar\css\style.css" />
     <Content Include="TemelSayfalar\css\wp.css" />
     <Content Include="TemelSayfalar\Hakkimizda.aspx" />
+    <Content Include="TemelSayfalar\img\Tel.png" />
+    <Content Include="TemelSayfalar\img\HakkimizdaLaptop.png" />
     <Content Include="TemelSayfalar\img\about-1.jpg" />
     <Content Include="TemelSayfalar\img\about-2.jpg" />
     <Content Include="TemelSayfalar\img\btelogo.png" />
@@ -120,6 +122,7 @@
     <Content Include="TemelSayfalar\img\testimonial-2.jpg" />
     <Content Include="TemelSayfalar\img\testimonial-3.jpg" />
     <Content Include="TemelSayfalar\img\whatsapp.png" />
+    <Content Include="TemelSayfalar\img\yok.jpg" />
     <Content Include="TemelSayfalar\js\main.js" />
     <Content Include="TemelSayfalar\lib\animate\animate.css" />
     <Content Include="TemelSayfalar\lib\animate\animate.min.css" />
