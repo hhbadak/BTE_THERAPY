@@ -90,7 +90,9 @@
     <Content Include="FizyoterapistPanel\js\app.js" />
     <Content Include="FizyoterapistPanel\js\app.js.LICENSE.txt" />
     <Content Include="FizyoterapistPanel\kayitol.aspx" />
+    <Content Include="FizyoterapistPanel\profil.aspx" />
     <Content Include="HastaPanel\css\egzersizkarti.css" />
+    <Content Include="HastaPanel\egzersizDetay.aspx" />
     <Content Include="HastaPanel\fotolar\foto.png" />
     <Content Include="HastaPanel\index.aspx" />
     <Content Include="TemelSayfalar\AnaSayfa.aspx" />
@@ -194,6 +196,20 @@
     </Compile>
     <Compile Include="FizyoterapistPanel\kayitol.aspx.designer.cs">
       <DependentUpon>kayitol.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FizyoterapistPanel\profil.aspx.cs">
+      <DependentUpon>profil.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FizyoterapistPanel\profil.aspx.designer.cs">
+      <DependentUpon>profil.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HastaPanel\egzersizDetay.aspx.cs">
+      <DependentUpon>egzersizDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HastaPanel\egzersizDetay.aspx.designer.cs">
+      <DependentUpon>egzersizDetay.aspx</DependentUpon>
     </Compile>
     <Compile Include="HastaPanel\index.aspx.cs">
       <DependentUpon>index.aspx</DependentUpon>

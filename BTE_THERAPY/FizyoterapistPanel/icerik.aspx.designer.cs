@@ -69,6 +69,42 @@ namespace BTE_THERAPY.FizyoterapistPanel
         protected global::System.Web.UI.WebControls.FileUpload fu_resim;
 
         /// <summary>
+        /// fu_resim1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fu_resim1;
+
+        /// <summary>
+        /// fu_resim2 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fu_resim2;
+
+        /// <summary>
+        /// fu_resim3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fu_resim3;
+
+        /// <summary>
+        /// fu_resim4 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fu_resim4;
+
+        /// <summary>
         /// lbtn_ekle control.
         /// </summary>
         /// <remarks>

@@ -11,8 +11,8 @@
         <asp:Repeater ID="Repeater1" runat="server">
             <itemtemplate>
                 <div class="card">
-                    <a href="#">
-                        <img src='<%# Eval("Foto", "../HastaPanel/fotolar/{0}") %>' alt='<%# Eval("Ad") %>' />
+                    <a href='../HastaPanel/egzersizDetay.aspx?mid=<%#Eval("ID") %>'>
+                        <img src="../FizyoterapistPanel/img/icerik/<%# Eval("Foto") %>" alt='<%# Eval("Ad") %>' />
                         <p><%# Eval("Baslik") %></p>
                     </a>
                 </div>

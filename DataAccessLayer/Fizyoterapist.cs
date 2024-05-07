@@ -16,6 +16,7 @@ namespace DataAccessLayer
         public string Telefon { get; set; }
         public bool Cinsiyet { get; set; }
         public DateTime Dogum_Tarihi { get; set; }
+        public string Dogum_TarihiStr { get; set; }
         public DateTime Kayit_Tarihi { get; set; }
         public bool Durum { get; set; }
     }

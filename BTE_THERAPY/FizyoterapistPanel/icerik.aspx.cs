@@ -32,18 +32,103 @@ namespace BTE_THERAPY.FizyoterapistPanel
                     Icerik = tb_icerik.InnerText
                 };
 
-                // Resim dosyası yüklendiğinde
+                // 1. Resim dosyası yüklendiğinde
                 if (fu_resim.HasFile)
                 {
-                    string resimUzantisi = Path.GetExtension(fu_resim.FileName);
-                    if (resimUzantisi == ".jpg" || resimUzantisi == ".png")
+                    FileInfo fi = new FileInfo(fu_resim.FileName);
+                    if (fi.Extension == ".jpg" || fi.Extension == ".png")
                     {
+                        string uzanti = fi.Extension;
                         string resimIsim = Guid.NewGuid().ToString();
-                        string resimYolu = "../FizyoterapistPanel/img/icerik/" + resimIsim + resimUzantisi;
-                        egzersiz.Foto = resimYolu;
+                        egzersiz.Foto = resimIsim + uzanti;
 
                         // Resmi kaydet
-                        fu_resim.SaveAs(Server.MapPath(resimYolu));
+                        fu_resim.SaveAs(Server.MapPath("~/FizyoterapistPanel/img/icerik/" + resimIsim + uzanti));
+
+                    }
+                    else
+                    {
+                        // Resim uzantısı geçersiz
+                        // Hata mesajı veya işlem yapılabilir
+                    }
+                }
+
+                // 2. Resim dosyası yüklendiğinde
+                if (fu_resim1.HasFile)
+                {
+                    FileInfo fi = new FileInfo(fu_resim1.FileName);
+                    if (fi.Extension == ".jpg" || fi.Extension == ".png")
+                    {
+                        string uzanti = fi.Extension;
+                        string resimIsim = Guid.NewGuid().ToString();
+                        egzersiz.Foto1 = resimIsim + uzanti;
+
+                        // Resmi kaydet
+                        fu_resim1.SaveAs(Server.MapPath("~/FizyoterapistPanel/img/icerik/" + resimIsim + uzanti));
+
+                    }
+                    else
+                    {
+                        // Resim uzantısı geçersiz
+                        // Hata mesajı veya işlem yapılabilir
+                    }
+                }
+
+                // 3. Resim dosyası yüklendiğinde
+                if (fu_resim2.HasFile)
+                {
+                    FileInfo fi = new FileInfo(fu_resim2.FileName);
+                    if (fi.Extension == ".jpg" || fi.Extension == ".png")
+                    {
+                        string uzanti = fi.Extension;
+                        string resimIsim = Guid.NewGuid().ToString();
+                        egzersiz.Foto2 = resimIsim + uzanti;
+
+                        // Resmi kaydet
+                        fu_resim2.SaveAs(Server.MapPath("~/FizyoterapistPanel/img/icerik/" + resimIsim + uzanti));
+
+                    }
+                    else
+                    {
+                        // Resim uzantısı geçersiz
+                        // Hata mesajı veya işlem yapılabilir
+                    }
+                }
+
+                // 4. Resim dosyası yüklendiğinde
+                if (fu_resim3.HasFile)
+                {
+                    FileInfo fi = new FileInfo(fu_resim3.FileName);
+                    if (fi.Extension == ".jpg" || fi.Extension == ".png")
+                    {
+                        string uzanti = fi.Extension;
+                        string resimIsim = Guid.NewGuid().ToString();
+                        egzersiz.Foto3 = resimIsim + uzanti;
+
+                        // Resmi kaydet
+                        fu_resim3.SaveAs(Server.MapPath("~/FizyoterapistPanel/img/icerik/" + resimIsim + uzanti));
+
+                    }
+                    else
+                    {
+                        // Resim uzantısı geçersiz
+                        // Hata mesajı veya işlem yapılabilir
+                    }
+                }
+
+                // 5. Resim dosyası yüklendiğinde
+                if (fu_resim4.HasFile)
+                {
+                    FileInfo fi = new FileInfo(fu_resim4.FileName);
+                    if (fi.Extension == ".jpg" || fi.Extension == ".png")
+                    {
+                        string uzanti = fi.Extension;
+                        string resimIsim = Guid.NewGuid().ToString();
+                        egzersiz.Foto4 = resimIsim + uzanti;
+
+                        // Resmi kaydet
+                        fu_resim4.SaveAs(Server.MapPath("~/FizyoterapistPanel/img/icerik/" + resimIsim + uzanti));
+
                     }
                     else
                     {
@@ -76,13 +161,15 @@ namespace BTE_THERAPY.FizyoterapistPanel
                 // İçerik eklemeyi dene
                 if (dm.IcerikEkle(egzersiz))
                 {
-                    // İçerik başarıyla eklendi
-                    // Başka işlemler veya mesaj gösterebilirsiniz
+                    string script = "alert('Kayıt işlemi başarılı.');";
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
+                    tb_baslik.Text = tb_egzersizAdi.Text = tb_icerik.InnerText = tb_videoUrl.Text = "";
+                    ddl_kategoriler.SelectedIndex = 0;
                 }
                 else
                 {
-                    // İçerik eklenemedi
-                    // Hata mesajı veya işlem yapılabilir
+                    string script = "alert('Kayıt işlemi başarısız oldu. Lütfen tekrar deneyiniz.');";
+                    ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
                 }
             }
             else

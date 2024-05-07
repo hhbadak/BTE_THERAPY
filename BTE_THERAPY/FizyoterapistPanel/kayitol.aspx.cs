@@ -8,7 +8,7 @@ namespace BTE_THERAPY.FizyoterapistPanel
 {
     public partial class kayitol : System.Web.UI.Page
     {
-        SqlConnection baglanti = new SqlConnection(@"data source=.\;initial catalog=BTE_THERAPY;integrated security=True");
+        SqlConnection baglanti = new SqlConnection(@"data source=.\SQLEXPRESS;initial catalog=BTE_THERAPY;integrated security=True");
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -80,7 +80,7 @@ namespace BTE_THERAPY.FizyoterapistPanel
             }
             else
             {
-                SqlCommand komut = new SqlCommand("INSERT INTO dbo.Hastalar (AdSoyad, Email, Parola, Cinsiyet, Adres, Telefon, KayitTarihi) VALUES (@AdSoyad, @Email, @Parola, @Cinsiyet, @Adres, @Telefon, @KayitTarihi)", baglanti);
+                SqlCommand komut = new SqlCommand("INSERT INTO dbo.Hastalar (AdSoyad, Email, Parola, Cinsiyet, Adres, Telefon, KayitTarihi, Durum) VALUES (@AdSoyad, @Email, @Parola, @Cinsiyet, @Adres, @Telefon, @KayitTarihi, 1)", baglanti);
                 komut.Parameters.AddWithValue("@AdSoyad", AdSoyad);
                 komut.Parameters.AddWithValue("@Email", Email);
                 komut.Parameters.AddWithValue("@Parola", hashliSifre);

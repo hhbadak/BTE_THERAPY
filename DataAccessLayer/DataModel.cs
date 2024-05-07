@@ -96,6 +96,7 @@ namespace DataAccessLayer
                     f.Parola = reader.GetString(4);
                     f.Telefon = reader.GetString(5);
                     f.Cinsiyet = reader.GetBoolean(6);
+                    f.Dogum_TarihiStr = reader.GetDateTime(7).ToShortDateString();
                     f.Dogum_Tarihi = reader.GetDateTime(7);
                     f.Kayit_Tarihi = reader.GetDateTime(8);
                     f.Durum = reader.GetBoolean(9);
@@ -148,7 +149,7 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "INSERT INTO Egzersiz(Ad, Video, Baslik, Icerik, KategoriID, Foto) VALUES(@Ad, @Video, @baslik, @Icerik, @KategoriID, @Foto)";
+                cmd.CommandText = "INSERT INTO Egzersiz(Ad, Video, Baslik, Icerik, KategoriID, Foto, Foto1, Foto2, Foto3, Foto4) VALUES(@Ad, @Video, @baslik, @Icerik, @KategoriID, @Foto, @Foto1, @Foto2, @Foto3, @Foto4)";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@Ad", eg.Ad);
                 cmd.Parameters.AddWithValue("@Video", eg.Video);
@@ -156,6 +157,10 @@ namespace DataAccessLayer
                 cmd.Parameters.AddWithValue("@Icerik", eg.Icerik);
                 cmd.Parameters.AddWithValue("@KategoriID", eg.Kategori_ID);
                 cmd.Parameters.AddWithValue("@Foto", eg.Foto);
+                cmd.Parameters.AddWithValue("@Foto1", eg.Foto1);
+                cmd.Parameters.AddWithValue("@Foto2", eg.Foto2);
+                cmd.Parameters.AddWithValue("@Foto3", eg.Foto3);
+                cmd.Parameters.AddWithValue("@Foto4", eg.Foto4);
                 con.Open();
                 cmd.ExecuteReader();
                 return true;
@@ -188,22 +193,19 @@ namespace DataAccessLayer
 
                 if (sayi > 0)
                 {
-                    cmd.CommandText = "SELECT ID, AdSoyad, Foto, EMail, Parola, Adres, Telefon, Cinsiyet, DogumTarih, KayitTarihi, Durum FROM Hastalar WHERE EMail = @mail AND Parola = @parola AND Durum = 1";
+
+                    cmd.CommandText = "SELECT ID, AdSoyad, EMail, Telefon, Cinsiyet, KayitTarihi, Durum FROM Hastalar WHERE EMail = @mail AND Parola = @parola AND Durum = 1";
                     SqlDataReader reader = cmd.ExecuteReader();
                     Hastalar h = new Hastalar();
                     while (reader.Read())
                     {
                         h.ID = reader.GetInt32(0);
                         h.AdSoyad = reader.GetString(1);
-                        h.Foto = reader.GetString(2);
-                        h.EMail = reader.GetString(3);
-                        h.Parola = reader.GetString(4);
-                        h.Adres = reader.GetString(5);
-                        h.Telefon = reader.GetString(6);
-                        h.Cinsiyet = reader.GetBoolean(7);
-                        h.DogumTarih = reader.GetDateTime(8);
-                        h.KayitTarihi = reader.GetDateTime(9);
-                        h.Durum = reader.GetBoolean(10);
+                        h.EMail = reader.GetString(2);
+                        h.Telefon = reader.GetString(3);
+                        h.CinsiyetBool = reader.GetBoolean(4);
+                        h.KayitTarihi = reader.GetDateTime(5);
+                        h.Durum = reader.GetBoolean(6);
                     }
                     return h;
                 }
@@ -239,7 +241,7 @@ namespace DataAccessLayer
                     h.Parola = reader.GetString(4);
                     h.Adres = reader.GetString(5);
                     h.Telefon = reader.GetString(6);
-                    h.Cinsiyet = reader.GetBoolean(7);
+                    h.CinsiyetBool = reader.GetBoolean(7);
                     h.DogumTarih = reader.GetDateTime(8);
                     h.KayitTarihi = reader.GetDateTime(9);
                     h.Durum = reader.GetBoolean(10);
@@ -279,7 +281,11 @@ namespace DataAccessLayer
                         Baslik = reader.GetString(reader.GetOrdinal("Baslik")),
                         Icerik = reader.GetString(reader.GetOrdinal("Icerik")),
                         Kategori_ID = reader.GetInt32(reader.GetOrdinal("KategoriID")),
-                        Foto = reader.IsDBNull(reader.GetOrdinal("Foto")) ? null : reader.GetString(reader.GetOrdinal("Foto"))
+                        Foto = reader.IsDBNull(reader.GetOrdinal("Foto")) ? null : reader.GetString(reader.GetOrdinal("Foto")),
+                        Foto1 = reader.IsDBNull(reader.GetOrdinal("Foto1")) ? null : reader.GetString(reader.GetOrdinal("Foto")),
+                        Foto2 = reader.IsDBNull(reader.GetOrdinal("Foto2")) ? null : reader.GetString(reader.GetOrdinal("Foto")),
+                        Foto3 = reader.IsDBNull(reader.GetOrdinal("Foto3")) ? null : reader.GetString(reader.GetOrdinal("Foto")),
+                        Foto4 = reader.IsDBNull(reader.GetOrdinal("Foto4")) ? null : reader.GetString(reader.GetOrdinal("Foto"))
                     };
                     egzersizListesi.Add(e);
                 }
@@ -296,7 +302,30 @@ namespace DataAccessLayer
                 con.Close();
             }
         }
+
+        public bool HastaEkle(Hastalar h)
+        {
+            try
+            {
+                cmd.CommandText = "INSERT INTO dbo.Hastalar (AdSoyad, Email, Parola, Cinsiyet, Adres, Telefon, KayitTarihi) VALUES (@AdSoyad, @Email, @Parola, @Cinsiyet, @Adres, @Telefon, @KayitTarihi)";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@AdSoyad", h.AdSoyad);
+                cmd.Parameters.AddWithValue("@Email", h.EMail);
+                cmd.Parameters.AddWithValue("@Parola", h.Parola);
+                cmd.Parameters.AddWithValue("@Cinsiyet", h.CinsiyetBool);
+                cmd.Parameters.AddWithValue("@Adres", h.Adres);
+                cmd.Parameters.AddWithValue("@Telefon", h.Telefon);
+                cmd.Parameters.AddWithValue("@KayitTarihi", h.KayitTarihi.ToShortDateString());
+                con.Open();
+                cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            { return false; }
+            finally { con.Close(); }
+        }
         #endregion
+
         #region sayilar
         public int ToplamHastaSayisi()
         {
