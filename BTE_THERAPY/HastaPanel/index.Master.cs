@@ -10,19 +10,23 @@ namespace BTE_THERAPY.HastaPanel
 {
     public partial class index : System.Web.UI.MasterPage
     {
+        DataModel dm = new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-            DataModel dm = new DataModel();
             if (Session["hasta"] != null)
             {
                 Hastalar h = (Hastalar)Session["hasta"];
                 rp_dropdown.DataSource = dm.HastaListele();
                 rp_dropdown.DataBind();
+                rp_kategori.DataSource = dm.KategoriListele();
+                rp_kategori.DataBind();
+
             }
             else
             {
                 Response.Redirect("../FizyoterapistPanel/giris.aspx");
             }
         }
+
     }
 }

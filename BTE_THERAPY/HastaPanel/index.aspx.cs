@@ -25,9 +25,10 @@ namespace BTE_THERAPY.HastaPanel
 
         protected void ddl_kategoriler_SelectedIndexChanged(object sender, EventArgs e)
         {
-            int selectedCategoryID = Convert.ToInt32(ddl_kategoriler.SelectedValue);
-            Repeater1.DataSource = dm.VerileriKategoridenGetir(selectedCategoryID); 
-            Repeater1.DataBind();
+            //int selectedCategoryID = Convert.ToInt32(ddl_kategoriler.SelectedValue);
+            //Repeater1.DataSource = dm.VerileriKategoridenGetir(selectedCategoryID);
+            //Repeater1.DataBind();
         }
+
     }
 }

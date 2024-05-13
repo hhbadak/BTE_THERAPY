@@ -131,7 +131,35 @@ namespace DataAccessLayer
                     Kategori k = new Kategori();
                     k.ID = reader.GetInt32(0);
                     k.Ad = reader.GetString(1);
+                    k.url = reader.GetString(2);
                     kategoriler.Add(k);
+                }
+                return kategoriler;
+            }
+            catch
+            {
+                return null;
+            }
+            finally { con.Close(); }
+        }
+
+        public List<altKategori> AltKategoriListele()
+        {
+            List<altKategori> kategoriler = new List<altKategori>();
+            try
+            {
+                altKategori a = new altKategori();
+                cmd.CommandText = "SELECT * FROM AltKategori WHERE UstKategoriID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", a.UstKategoriID);
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    a.ID = reader.GetInt32(0);
+                    a.UstKategoriID = reader.GetInt32(1);
+                    a.AltKategori = reader.GetString(2);
+                    kategoriler.Add(a);
                 }
                 return kategoriler;
             }

@@ -24,7 +24,6 @@ namespace BTE_THERAPY.FizyoterapistPanel
             {
                 Response.Redirect("../FizyoterapistPanel/giris.aspx");
             }
-
         }
     }
 }

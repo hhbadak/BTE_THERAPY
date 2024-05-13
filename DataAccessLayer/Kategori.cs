@@ -10,5 +10,6 @@ namespace DataAccessLayer
     {
         public int ID { get; set; }
         public string Ad { get; set; }
+        public string url { get; set; }
     }
 }

@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer
 {
-    public class ConnectionStrings
+    public class altKategori
     {
-        public static string ConStr = @"data source =.\SQLEXPRESS; Initial Catalog = BTE_THERAPY; Integrated Security = True";
+        public int ID { get; set; }
+        public int UstKategoriID { get; set; }
+        public string AltKategori { get; set; }
     }
 }

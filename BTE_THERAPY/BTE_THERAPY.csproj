@@ -91,10 +91,16 @@
     <Content Include="FizyoterapistPanel\js\app.js.LICENSE.txt" />
     <Content Include="FizyoterapistPanel\kayitol.aspx" />
     <Content Include="FizyoterapistPanel\profil.aspx" />
+    <Content Include="HastaPanel\aktifYaklasimlar.aspx" />
     <Content Include="HastaPanel\css\egzersizkarti.css" />
+    <Content Include="HastaPanel\css\filter.css" />
+    <Content Include="HastaPanel\duyu.aspx" />
     <Content Include="HastaPanel\egzersizDetay.aspx" />
     <Content Include="HastaPanel\fotolar\foto.png" />
     <Content Include="HastaPanel\index.aspx" />
+    <Content Include="HastaPanel\mesaneVeBagirsak.aspx" />
+    <Content Include="HastaPanel\pasifYaklasimlar.aspx" />
+    <Content Include="HastaPanel\posturEgitimi.aspx" />
     <Content Include="TemelSayfalar\AnaSayfa.aspx" />
     <Content Include="TemelSayfalar\cikis.aspx" />
     <Content Include="TemelSayfalar\css\bootstrap.min.css" />
@@ -204,6 +210,20 @@
     <Compile Include="FizyoterapistPanel\profil.aspx.designer.cs">
       <DependentUpon>profil.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HastaPanel\aktifYaklasimlar.aspx.cs">
+      <DependentUpon>aktifYaklasimlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HastaPanel\aktifYaklasimlar.aspx.designer.cs">
+      <DependentUpon>aktifYaklasimlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HastaPanel\duyu.aspx.cs">
+      <DependentUpon>duyu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HastaPanel\duyu.aspx.designer.cs">
+      <DependentUpon>duyu.aspx</DependentUpon>
+    </Compile>
     <Compile Include="HastaPanel\egzersizDetay.aspx.cs">
       <DependentUpon>egzersizDetay.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -224,6 +244,27 @@
     </Compile>
     <Compile Include="HastaPanel\index.Master.designer.cs">
       <DependentUpon>index.Master</DependentUpon>
+    </Compile>
+    <Compile Include="HastaPanel\mesaneVeBagirsak.aspx.cs">
+      <DependentUpon>mesaneVeBagirsak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HastaPanel\mesaneVeBagirsak.aspx.designer.cs">
+      <DependentUpon>mesaneVeBagirsak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HastaPanel\pasifYaklasimlar.aspx.cs">
+      <DependentUpon>pasifYaklasimlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HastaPanel\pasifYaklasimlar.aspx.designer.cs">
+      <DependentUpon>pasifYaklasimlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HastaPanel\posturEgitimi.aspx.cs">
+      <DependentUpon>posturEgitimi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HastaPanel\posturEgitimi.aspx.designer.cs">
+      <DependentUpon>posturEgitimi.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TemelSayfalar\AnaSayfa.aspx.cs">
