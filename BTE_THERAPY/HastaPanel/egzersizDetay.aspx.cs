@@ -18,7 +18,7 @@ namespace BTE_THERAPY.HastaPanel
                 if (!IsPostBack)
                 {
                     int id = Convert.ToInt32(Request.QueryString["mid"]);
-                    rp_detail.DataSource = dm.VerileriKategoridenGetir(id);
+                    rp_detail.DataSource = dm.VerileriAltKategoridenGetir(id);
                     rp_detail.DataBind();
                 }
             }

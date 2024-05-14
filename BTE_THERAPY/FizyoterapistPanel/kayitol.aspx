@@ -72,7 +72,7 @@
 
                                             <div class="mb-3">
                                                 <label class="form-label">Telefon</label>
-                                                <asp:TextBox ID="tb_telefon" runat="server" CssClass="form-control form-control-lg" placeholder="Telefon numaranızı giriniz"></asp:TextBox>
+                                                <asp:TextBox ID="tb_telefon" runat="server" onchange="formatTelefon()" CssClass="form-control form-control-lg" placeholder="Telefon numaranızı giriniz"></asp:TextBox>
                                             </div>
                                             <div>
                                                 <asp:LinkButton ID="lbtn_kayitol" runat="server" CssClass="btn btn-lg btn-primary" OnClick="lbtn_kayitol_Click">Kayıt Ol</asp:LinkButton>
@@ -83,10 +83,37 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
     </main>
 
     <script src="../FizyoterapistPanel/js/app.js"></script>
 
+    <script>
+        function formatTelefon() {
+            var telefon = document.getElementById('<%= tb_telefon.ClientID %>').value;
 
+    // Gelen telefon numarasında boşlukları kaldır
+    telefon = telefon.replace(/\s/g, '');
+
+    // Eğer +90 ile başlamıyorsa, +90 ekleyin
+    if (!telefon.startsWith('+90')) {
+        telefon = '+90' + telefon;
+    }
+
+    // Gereksiz karakterleri kaldır
+    telefon = telefon.replace(/\D/g, '');
+
+    // Uyarı verilecek koşulları kontrol et
+    if (telefon.length !== 13 || isNaN(telefon)) {
+        alert("Telefon numarası geçersiz! Lütfen +90XXXXXXXXXX formatında girin.");
+        return;
+    }
+
+    // Son halini TextBox'a yazdır
+            document.getElementById('<%= tb_telefon.ClientID %>').value = telefon;
+        }
+
+    </script>
 </body>
 </html>

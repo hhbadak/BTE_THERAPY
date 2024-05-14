@@ -25,5 +25,11 @@ namespace BTE_THERAPY.FizyoterapistPanel
                 Response.Redirect("../FizyoterapistPanel/giris.aspx");
             }
         }
+
+        protected void lbtn_cikis_Click(object sender, EventArgs e)
+        {
+            Session["fizyoterapist"] = null;
+            Response.Redirect("../FizyoterapistPanel/giris.aspx");
+        }
     }
 }

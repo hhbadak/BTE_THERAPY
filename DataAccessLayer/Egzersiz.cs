@@ -13,7 +13,7 @@ namespace DataAccessLayer
         public string Video { get; set; }
         public string Baslik { get; set; }
         public string Icerik { get; set; }
-        public int Kategori_ID { get; set; }
+        public int AltKategoriID { get; set; }
         public string Foto { get; set; }
         public string Foto1 { get; set; }
         public string Foto2 { get; set; }

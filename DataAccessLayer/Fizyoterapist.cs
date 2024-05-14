@@ -18,6 +18,7 @@ namespace DataAccessLayer
         public DateTime Dogum_Tarihi { get; set; }
         public string Dogum_TarihiStr { get; set; }
         public DateTime Kayit_Tarihi { get; set; }
+        public string Kayit_TarihiStr { get; set; }
         public bool Durum { get; set; }
     }
 }

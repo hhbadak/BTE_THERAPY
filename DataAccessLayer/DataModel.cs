@@ -113,13 +113,80 @@ namespace DataAccessLayer
                 con.Close();
             }
         }
+
+        public Fizyoterapist FizyoterapistGetir(int id)
+        {
+            try
+            {
+                cmd.CommandText = "SELECT AdSoyad, Foto, EMail, Parola, Telefon, Cinsiyet, DogumTarih, KayitTarihi, Durum FROM Fizyoterapist WHERE ID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", id);
+                con.Open();
+
+                SqlDataReader reader = cmd.ExecuteReader();
+                Fizyoterapist f = new Fizyoterapist();
+                while (reader.Read())
+                {
+                    f.ID = reader.GetInt32(0);
+                    f.AdSoyad = reader.GetString(1);
+                    f.Foto = reader.GetString(2);
+                    f.Email = reader.GetString(3);
+                    f.Parola = reader.GetString(4);
+                    f.Telefon = reader.GetString(5);
+                    f.Cinsiyet = reader.GetBoolean(6);
+                    f.Dogum_Tarihi = reader.GetDateTime(7);
+                    f.Dogum_TarihiStr = reader.GetDateTime(7).ToShortDateString();
+                    f.Kayit_Tarihi = reader.GetDateTime(8);
+                    f.Kayit_TarihiStr = reader.GetDateTime(8).ToShortDateString();
+                    f.Durum = reader.GetBoolean(9);
+                }
+                return f;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public bool FizyoterapistGuncelle(Fizyoterapist f)
+        {
+            try
+            {
+                cmd.CommandText = "UPDATE Fizyoterapist SET AdSoyad = @ad, EMail = @mail, Parola = @parola, Telefon = @telefon WHERE ID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", f.ID);
+                cmd.Parameters.AddWithValue("@ad", f.AdSoyad);
+                cmd.Parameters.AddWithValue("@mail", f.Email);
+                cmd.Parameters.AddWithValue("@parola", f.Parola);
+                cmd.Parameters.AddWithValue("@telefon", f.Telefon);
+
+                con.Open();
+
+                cmd.ExecuteNonQuery();
+                return true;
+
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
         #endregion
 
         #region Kategori İşlemleri
 
         public List<Kategori> KategoriListele()
         {
-            List<Kategori> kategoriler = new List<Kategori>();
+            List<Kategori> kategori = new List<Kategori>();
             try
             {
                 cmd.CommandText = "SELECT * FROM Kategori";
@@ -132,9 +199,9 @@ namespace DataAccessLayer
                     k.ID = reader.GetInt32(0);
                     k.Ad = reader.GetString(1);
                     k.url = reader.GetString(2);
-                    kategoriler.Add(k);
+                    kategori.Add(k);
                 }
-                return kategoriler;
+                return kategori;
             }
             catch
             {
@@ -144,6 +211,32 @@ namespace DataAccessLayer
         }
 
         public List<altKategori> AltKategoriListele()
+        {
+            List<altKategori> altKategori = new List<altKategori>();
+            try
+            {
+                cmd.CommandText = "SELECT * FROM AltKategori";
+                cmd.Parameters.Clear();
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    altKategori k = new altKategori();
+                    k.ID = reader.GetInt32(0);
+                    k.UstKategoriID = reader.GetInt32(1);
+                    k.AltKategori = reader.GetString(2);
+                    altKategori.Add(k);
+                }
+                return altKategori;
+            }
+            catch
+            {
+                return null;
+            }
+            finally { con.Close(); }
+        }
+
+        public List<altKategori> AltKategoriListele2()
         {
             List<altKategori> kategoriler = new List<altKategori>();
             try
@@ -177,13 +270,13 @@ namespace DataAccessLayer
         {
             try
             {
-                cmd.CommandText = "INSERT INTO Egzersiz(Ad, Video, Baslik, Icerik, KategoriID, Foto, Foto1, Foto2, Foto3, Foto4) VALUES(@Ad, @Video, @baslik, @Icerik, @KategoriID, @Foto, @Foto1, @Foto2, @Foto3, @Foto4)";
+                cmd.CommandText = "INSERT INTO Egzersiz(Ad, Video, Baslik, Icerik, AltKategoriID, Foto, Foto1, Foto2, Foto3, Foto4) VALUES(@Ad, @Video, @baslik, @Icerik, @KategoriID, @Foto, @Foto1, @Foto2, @Foto3, @Foto4)";
                 cmd.Parameters.Clear();
                 cmd.Parameters.AddWithValue("@Ad", eg.Ad);
                 cmd.Parameters.AddWithValue("@Video", eg.Video);
                 cmd.Parameters.AddWithValue("@baslik", eg.Baslik);
                 cmd.Parameters.AddWithValue("@Icerik", eg.Icerik);
-                cmd.Parameters.AddWithValue("@KategoriID", eg.Kategori_ID);
+                cmd.Parameters.AddWithValue("@KategoriID", eg.AltKategoriID);
                 cmd.Parameters.AddWithValue("@Foto", eg.Foto);
                 cmd.Parameters.AddWithValue("@Foto1", eg.Foto1);
                 cmd.Parameters.AddWithValue("@Foto2", eg.Foto2);
@@ -196,6 +289,95 @@ namespace DataAccessLayer
             catch
             {
                 return false;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+        public List<Egzersiz> VerileriAltKategoridenGetir(int selectedSubCategoryID)
+        {
+            List<Egzersiz> egzersizListesi = new List<Egzersiz>();
+            try
+            {
+                cmd.CommandText = "SELECT * FROM Egzersiz WHERE AltKategoriID = @AltKategoriID";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@AltKategoriID", selectedSubCategoryID);
+                cmd.Connection = con;
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Egzersiz e = new Egzersiz
+                    {
+                        ID = reader.GetInt32(reader.GetOrdinal("ID")),
+                        Ad = reader.GetString(reader.GetOrdinal("Ad")),
+                        Video = reader.IsDBNull(reader.GetOrdinal("Video")) ? null : reader.GetString(reader.GetOrdinal("Video")),
+                        Baslik = reader.GetString(reader.GetOrdinal("Baslik")),
+                        Icerik = reader.GetString(reader.GetOrdinal("Icerik")),
+                        AltKategoriID = reader.GetInt32(reader.GetOrdinal("AltKategoriID")),
+                        Foto = reader.IsDBNull(reader.GetOrdinal("Foto")) ? null : reader.GetString(reader.GetOrdinal("Foto")),
+                        Foto1 = reader.IsDBNull(reader.GetOrdinal("Foto1")) ? null : reader.GetString(reader.GetOrdinal("Foto1")),
+                        Foto2 = reader.IsDBNull(reader.GetOrdinal("Foto2")) ? null : reader.GetString(reader.GetOrdinal("Foto2")),
+                        Foto3 = reader.IsDBNull(reader.GetOrdinal("Foto3")) ? null : reader.GetString(reader.GetOrdinal("Foto3")),
+                        Foto4 = reader.IsDBNull(reader.GetOrdinal("Foto4")) ? null : reader.GetString(reader.GetOrdinal("Foto4"))
+                    };
+                    egzersizListesi.Add(e);
+                }
+                reader.Close();
+                return egzersizListesi;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hata: " + ex.Message);
+                return null;
+            }
+            finally
+            {
+                con.Close();
+            }
+        }
+
+
+        public List<Egzersiz> CardListe(int selectedSubCategoryID)
+        {
+            List<Egzersiz> egzersizListesi = new List<Egzersiz>();
+            try
+            {
+                cmd.CommandText = "SELECT * FROM Egzersiz WHERE AltKategoriID = @id";
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@id", selectedSubCategoryID);
+                cmd.Connection = con;
+
+                con.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Egzersiz e = new Egzersiz
+                    {
+                        ID = reader.GetInt32(reader.GetOrdinal("ID")),
+                        Ad = reader.GetString(reader.GetOrdinal("Ad")),
+                        Video = reader.IsDBNull(reader.GetOrdinal("Video")) ? null : reader.GetString(reader.GetOrdinal("Video")),
+                        Baslik = reader.GetString(reader.GetOrdinal("Baslik")),
+                        Icerik = reader.GetString(reader.GetOrdinal("Icerik")),
+                        AltKategoriID = reader.GetInt32(reader.GetOrdinal("UstKategoriID")),
+                        Foto = reader.IsDBNull(reader.GetOrdinal("Foto")) ? null : reader.GetString(reader.GetOrdinal("Foto")),
+                        Foto1 = reader.IsDBNull(reader.GetOrdinal("Foto1")) ? null : reader.GetString(reader.GetOrdinal("Foto1")),
+                        Foto2 = reader.IsDBNull(reader.GetOrdinal("Foto2")) ? null : reader.GetString(reader.GetOrdinal("Foto2")),
+                        Foto3 = reader.IsDBNull(reader.GetOrdinal("Foto3")) ? null : reader.GetString(reader.GetOrdinal("Foto3")),
+                        Foto4 = reader.IsDBNull(reader.GetOrdinal("Foto4")) ? null : reader.GetString(reader.GetOrdinal("Foto4"))
+                    };
+                    egzersizListesi.Add(e);
+                }
+                reader.Close();
+                return egzersizListesi;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Hata: " + ex.Message);
+                return null;
             }
             finally
             {
@@ -279,50 +461,6 @@ namespace DataAccessLayer
             }
             catch
             {
-                return null;
-            }
-            finally
-            {
-                con.Close();
-            }
-        }
-
-        public List<Egzersiz> VerileriKategoridenGetir(int selectedCategoryID)
-        {
-            List<Egzersiz> egzersizListesi = new List<Egzersiz>();
-            try
-            {
-                cmd.CommandText = "SELECT * FROM Egzersiz WHERE KategoriID = @KategoriID";
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@KategoriID", selectedCategoryID);
-                cmd.Connection = con;
-
-                con.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-                while (reader.Read())
-                {
-                    Egzersiz e = new Egzersiz
-                    {
-                        ID = reader.GetInt32(reader.GetOrdinal("ID")),
-                        Ad = reader.GetString(reader.GetOrdinal("Ad")),
-                        Video = reader.IsDBNull(reader.GetOrdinal("Video")) ? null : reader.GetString(reader.GetOrdinal("Video")),
-                        Baslik = reader.GetString(reader.GetOrdinal("Baslik")),
-                        Icerik = reader.GetString(reader.GetOrdinal("Icerik")),
-                        Kategori_ID = reader.GetInt32(reader.GetOrdinal("KategoriID")),
-                        Foto = reader.IsDBNull(reader.GetOrdinal("Foto")) ? null : reader.GetString(reader.GetOrdinal("Foto")),
-                        Foto1 = reader.IsDBNull(reader.GetOrdinal("Foto1")) ? null : reader.GetString(reader.GetOrdinal("Foto")),
-                        Foto2 = reader.IsDBNull(reader.GetOrdinal("Foto2")) ? null : reader.GetString(reader.GetOrdinal("Foto")),
-                        Foto3 = reader.IsDBNull(reader.GetOrdinal("Foto3")) ? null : reader.GetString(reader.GetOrdinal("Foto")),
-                        Foto4 = reader.IsDBNull(reader.GetOrdinal("Foto4")) ? null : reader.GetString(reader.GetOrdinal("Foto"))
-                    };
-                    egzersizListesi.Add(e);
-                }
-                reader.Close();
-                return egzersizListesi;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine("Hata: " + ex.Message);
                 return null;
             }
             finally

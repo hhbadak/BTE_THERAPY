@@ -13,9 +13,9 @@ namespace BTE_THERAPY.FizyoterapistPanel
         {
             if (!IsPostBack)
             {
-                ddl_kategoriler.DataTextField = "Ad";
+                ddl_kategoriler.DataTextField = "AltKategori";
                 ddl_kategoriler.DataValueField = "ID";
-                ddl_kategoriler.DataSource = dm.KategoriListele();
+                ddl_kategoriler.DataSource = dm.AltKategoriListele();
                 ddl_kategoriler.DataBind();
             }
         }
@@ -27,7 +27,7 @@ namespace BTE_THERAPY.FizyoterapistPanel
                 Egzersiz egzersiz = new Egzersiz
                 {
                     Ad = tb_egzersizAdi.Text,
-                    Kategori_ID = Convert.ToInt32(ddl_kategoriler.SelectedItem.Value),
+                    AltKategoriID = Convert.ToInt32(ddl_kategoriler.SelectedItem.Value),
                     Baslik = tb_baslik.Text,
                     Icerik = tb_icerik.InnerText
                 };
