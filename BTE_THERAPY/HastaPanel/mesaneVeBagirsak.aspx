@@ -28,8 +28,13 @@
 
 
     <div class="portfolio-filter">
-        <button type="button" onclick="filterData(1)">Filtre 1</button>
-        <button type="button" onclick="filterData(2)">Filtre 2</button>
+        <button type="button" onclick="filterData(1)">Davranış Değişikliği</button>
+        <button type="button" onclick="filterData(2)">Doğru Tuvalet Pozisyonu</button>
+        <button type="button" onclick="filterData(2)">Sıvı ve Beslenme Önerileri</button>
+        <button type="button" onclick="filterData(2)">Doğru Tuvalet Pozisyonu</button>
+        <button type="button" onclick="filterData(2)">İşeme ve Dışkılama Eğitimi</button>
+        <button type="button" onclick="filterData(2)">Alarm Tedavisi</button>
+
         <!-- Diğer butonlar buraya eklenebilir -->
     </div>
 

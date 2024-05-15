@@ -62,6 +62,11 @@
                                 <i class="align-middle" data-feather="user"></i><span class="align-middle">Hakkımızda</span>
                             </a>
                         </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="../TemelSayfalar/cikis.aspx">
+                                <i class="align-middle" data-feather="user"></i><span class="align-middle">Çıkış Yap</span>
+                            </a>
+                        </li>
 
 
                     </ul>

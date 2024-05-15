@@ -22,3 +22,13 @@ C:\Users\USER\Documents\GitHub\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessL
 C:\Users\USER\Documents\GitHub\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
 C:\Users\USER\Documents\GitHub\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.dll
 C:\Users\USER\Documents\GitHub\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
+C:\Users\batuh\Desktop\Proje Yedek BTE\14.05.2024 Oynanmış hali 20.00\BTE_THERAPY\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\batuh\Desktop\Proje Yedek BTE\14.05.2024 Oynanmış hali 20.00\BTE_THERAPY\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\batuh\Desktop\Proje Yedek BTE\14.05.2024 Oynanmış hali 20.00\BTE_THERAPY\DataAccessLayer\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\batuh\Desktop\Proje Yedek BTE\14.05.2024 Oynanmış hali 20.00\BTE_THERAPY\DataAccessLayer\bin\Debug\itextsharp.dll
+C:\Users\batuh\Desktop\Proje Yedek BTE\14.05.2024 Oynanmış hali 20.00\BTE_THERAPY\DataAccessLayer\bin\Debug\itextsharp.xml
+C:\Users\batuh\Desktop\Proje Yedek BTE\14.05.2024 Oynanmış hali 20.00\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\batuh\Desktop\Proje Yedek BTE\14.05.2024 Oynanmış hali 20.00\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\batuh\Desktop\Proje Yedek BTE\14.05.2024 Oynanmış hali 20.00\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAcce.E67BD773.Up2Date
+C:\Users\batuh\Desktop\Proje Yedek BTE\14.05.2024 Oynanmış hali 20.00\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\batuh\Desktop\Proje Yedek BTE\14.05.2024 Oynanmış hali 20.00\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.pdb

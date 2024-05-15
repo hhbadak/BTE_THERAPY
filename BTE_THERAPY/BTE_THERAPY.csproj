@@ -43,9 +43,15 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
     <Reference Include="DevExpress.Web.ASPxThemes.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.Resources.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.Web.v23.2, Version=23.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
@@ -101,37 +107,32 @@
     <Content Include="HastaPanel\mesaneVeBagirsak.aspx" />
     <Content Include="HastaPanel\pasifYaklasimlar.aspx" />
     <Content Include="HastaPanel\posturEgitimi.aspx" />
+    <Content Include="HastaPanel\Test.aspx" />
     <Content Include="TemelSayfalar\AnaSayfa.aspx" />
     <Content Include="TemelSayfalar\cikis.aspx" />
     <Content Include="TemelSayfalar\css\bootstrap.min.css" />
     <Content Include="TemelSayfalar\css\style.css" />
     <Content Include="TemelSayfalar\css\wp.css" />
+    <Content Include="TemelSayfalar\GizlilikSozlesmesi.aspx" />
     <Content Include="TemelSayfalar\Hakkimizda.aspx" />
-    <Content Include="TemelSayfalar\img\Tel.png" />
-    <Content Include="TemelSayfalar\img\HakkimizdaLaptop.png" />
-    <Content Include="TemelSayfalar\img\about-1.jpg" />
-    <Content Include="TemelSayfalar\img\about-2.jpg" />
-    <Content Include="TemelSayfalar\img\btelogo.png" />
-    <Content Include="TemelSayfalar\img\carousel-1.jpg" />
-    <Content Include="TemelSayfalar\img\carousel-2.jpg" />
-    <Content Include="TemelSayfalar\img\carousel-3.jpg" />
-    <Content Include="TemelSayfalar\img\feature.jpg" />
-    <Content Include="TemelSayfalar\img\hakkimizda1.jpg" />
-    <Content Include="TemelSayfalar\img\hakkimizda2.jpg" />
-    <Content Include="TemelSayfalar\img\header-page.jpg" />
-    <Content Include="TemelSayfalar\img\slider01.jpg" />
-    <Content Include="TemelSayfalar\img\slider02.jpg" />
-    <Content Include="TemelSayfalar\img\slider03.jpg" />
-    <Content Include="TemelSayfalar\img\team-1.jpg" />
-    <Content Include="TemelSayfalar\img\team-2.jpg" />
-    <Content Include="TemelSayfalar\img\team-3.jpg" />
-    <Content Include="TemelSayfalar\img\team-4.jpg" />
-    <Content Include="TemelSayfalar\img\testimonial-1.jpg" />
-    <Content Include="TemelSayfalar\img\testimonial-2.jpg" />
-    <Content Include="TemelSayfalar\img\testimonial-3.jpg" />
+    <Content Include="TemelSayfalar\img\anasayfahakkimizda\hakkimizda1.png" />
+    <Content Include="TemelSayfalar\img\anasayfahakkimizda\hakkimizda2.png" />
+    <Content Include="TemelSayfalar\img\anasayfaslider\slider1.png" />
+    <Content Include="TemelSayfalar\img\anasayfaslider\slider2.png" />
+    <Content Include="TemelSayfalar\img\anasayfaslider\slider3.png" />
+    <Content Include="TemelSayfalar\img\banner.jpg" />
+    <Content Include="TemelSayfalar\img\fizyoterapistler\busrapalaz.jpg" />
+    <Content Include="TemelSayfalar\img\fizyoterapistler\damlakorkmaz.jpg" />
+    <Content Include="TemelSayfalar\img\fizyoterapistler\ozgecelikertosun.jpg" />
+    <Content Include="TemelSayfalar\img\hakkimizdasayfasi\hakkimizda2.png" />
+    <Content Include="TemelSayfalar\img\hakkimizdasayfasi\hakkımızda1.png" />
+    <Content Include="TemelSayfalar\img\headerlogo.png" />
+    <Content Include="TemelSayfalar\img\nedenbiz\nedenbiz.jpg" />
     <Content Include="TemelSayfalar\img\whatsapp.png" />
     <Content Include="TemelSayfalar\img\yok.jpg" />
     <Content Include="TemelSayfalar\js\main.js" />
+    <Content Include="TemelSayfalar\KisiselVerilerinKorunmasi.aspx" />
+    <Content Include="TemelSayfalar\KullaniciSozlesmesi.aspx" />
     <Content Include="TemelSayfalar\lib\animate\animate.css" />
     <Content Include="TemelSayfalar\lib\animate\animate.min.css" />
     <Content Include="TemelSayfalar\lib\counterup\counterup.min.js" />
@@ -266,6 +267,13 @@
     <Compile Include="HastaPanel\posturEgitimi.aspx.designer.cs">
       <DependentUpon>posturEgitimi.aspx</DependentUpon>
     </Compile>
+    <Compile Include="HastaPanel\Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HastaPanel\Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TemelSayfalar\AnaSayfa.aspx.cs">
       <DependentUpon>AnaSayfa.aspx</DependentUpon>
@@ -281,12 +289,33 @@
     <Compile Include="TemelSayfalar\cikis.aspx.designer.cs">
       <DependentUpon>cikis.aspx</DependentUpon>
     </Compile>
+    <Compile Include="TemelSayfalar\GizlilikSozlesmesi.aspx.cs">
+      <DependentUpon>GizlilikSozlesmesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemelSayfalar\GizlilikSozlesmesi.aspx.designer.cs">
+      <DependentUpon>GizlilikSozlesmesi.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TemelSayfalar\Hakkimizda.aspx.cs">
       <DependentUpon>Hakkimizda.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TemelSayfalar\Hakkimizda.aspx.designer.cs">
       <DependentUpon>Hakkimizda.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemelSayfalar\KisiselVerilerinKorunmasi.aspx.cs">
+      <DependentUpon>KisiselVerilerinKorunmasi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemelSayfalar\KisiselVerilerinKorunmasi.aspx.designer.cs">
+      <DependentUpon>KisiselVerilerinKorunmasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TemelSayfalar\KullaniciSozlesmesi.aspx.cs">
+      <DependentUpon>KullaniciSozlesmesi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TemelSayfalar\KullaniciSozlesmesi.aspx.designer.cs">
+      <DependentUpon>KullaniciSozlesmesi.aspx</DependentUpon>
     </Compile>
     <Compile Include="TemelSayfalar\Temel.Master.cs">
       <DependentUpon>Temel.Master</DependentUpon>
@@ -309,6 +338,7 @@
     <Content Include="FizyoterapistPanel\js\app.js.map" />
     <Content Include="FizyoterapistPanel\index.Master" />
     <Content Include="HastaPanel\index.Master" />
+    <Content Include="HastaPanel\font\OpenSans-Regular.ttf" />
     <None Include="packages.config" />
     <Content Include="TemelSayfalar\Temel.Master" />
     <Content Include="TemelSayfalar\scss\bootstrap.scss" />
@@ -416,6 +446,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

@@ -5,7 +5,7 @@
     <!-- Animasyon -->
     <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
         <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
-            <span class="sr-only">Loading...</span>
+            <span class="sr-only">Yükleniyor...</span>
         </div>
     </div>
     <!-- Animasyon -->
@@ -37,11 +37,11 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/yok.jpg" alt="">
+                            <img class="img-fluid" src="img/fizyoterapistler/ozgecelikertosun.jpg" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
-                            <p class="text-primary">DOÇ. DR.</p>
-                            <h5>ÖZGE ÇELİKER TOSUN</h5>
+                            <p class="text-primary">DOÇ. DR. FİZYOTERAPİST</p>
+                            <h5>Özge Çeliker Tosun</h5>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -53,11 +53,11 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/yok.jpg" alt="">
+                            <img class="img-fluid" src="img/fizyoterapistler/damlakorkmaz.jpg" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
-                            <h5>Doctor Adı</h5>
-                            <p class="text-primary">Branş</p>
+                            <p class="text-primary">UZMAN FİZYOTERAPİST</p>
+                            <h5>Damla Korkmaz Dayıcan</h5>
                             <div class="team-social text-center">
                                 <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
@@ -69,32 +69,16 @@
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                     <div class="team-item position-relative rounded overflow-hidden">
                         <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/yok.jpg" alt="">
+                            <img class="img-fluid" src="img/fizyoterapistler/busrapalaz.jpg" alt="">
                         </div>
                         <div class="team-text bg-light text-center p-4">
-                            <h5>Doctor Adı</h5>
-                            <p class="text-primary">Branş</p>
+                            <p class="text-primary">UZMAN FİZYOTERAPİST</p>
+                            <h5>Büşra Palaz</h5>
                             <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                             <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
                                 <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                    <div class="team-item position-relative rounded overflow-hidden">
-                        <div class="overflow-hidden">
-                            <img class="img-fluid" src="img/yok.jpg" alt="">
-                        </div>
-                        <div class="team-text bg-light text-center p-4">
-                            <h5>Doctor Adı</h5>
-                            <p class="text-primary">Branş</p>
-                            <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
-                            </div>
+                                  <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                     </div>
                         </div>
                     </div>
                 </div>
@@ -114,7 +98,9 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">Klinik Adresimiz</p>
-                            <h5 class="mb-0">Akçay Cad. İzmir/Gaziemir</h5>
+                            <h5 class="mb-0">Dokuz Eylül Üniversitesi Fizik Tedavi ve Rehabilitasyon Fakültesi
+15 Temmuz Sağlık ve Sanat Yerleşkesi Mithatpaşa Caddesi No:56/15 
+İnciraltı 35340 – İZMİR</h5>
                         </div>
                     </div>
                 </div>
@@ -124,8 +110,8 @@
                             <i class="fa fa-phone-alt text-primary"></i>
                         </div>
                         <div class="ms-4">
-                            <p class="mb-2">Bilgi almak için bizi arayın</p>
-                            <h5 class="mb-0">+90 535-535-3535</h5>
+                            <p class="mb-2">Hasta Kabul Birimi</p>
+                            <h5 class="mb-0">0 (232) 412 49 15</h5>
                         </div>
                     </div>
                 </div>
@@ -136,17 +122,17 @@
                         </div>
                         <div class="ms-4">
                             <p class="mb-2">Mail Adresimiz</p>
-                            <h5 class="mb-0">Özge@gmail.com</h5>
+                            <h5 class="mb-0">info@pedipelviksaglık.com</h5>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="h-100" style="min-height: 400px;">
-                        <iframe class="rounded w-100 h-100" 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6261.249557663208!2d27.12333977222444!3d38.3113604270765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbe07933cbd279%3A0x78fc553e614e6e67!2sGaziemir%20Nevvar%20Salih%20%C4%B0%C5%9Fg%C3%B6ren%20Devlet%20Hastanesi!5e0!3m2!1str!2str!4v1712512621486!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                        frameborder="0" allowfullscreen="" aria-hidden="false"
-                        tabindex="0"></iframe>
-                    </div>
+                
+               <!--<div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">-->
+                   <!-- <div class="h-100" style="min-height: 400px;">-->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d781.7444105278638!2d27.036545!3d38.395766!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14bbdc5e43d46ecb%3A0x8d798e377a8984a1!2sDokuz%20Eyl%C3%BCl%20%C3%9Cniversite%20Fizik%20Tedavi%20ve%20Rehabilitasyon%20Y%C3%BCksek%20Okulu!5e0!3m2!1str!2str!4v1715698385366!5m2!1str!2str" 
+                           width="1000" height="600"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+                      <!--  </div>-->
+                   
                 </div>
             </div>
         </div>
@@ -176,3 +162,4 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 </asp:Content>
+

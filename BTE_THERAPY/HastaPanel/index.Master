@@ -36,28 +36,26 @@
                     <ul class="sidebar-nav">
                         <li class="sidebar-header">Egzersizler
                         </li>
-
-                        <li class="sidebar-item active">
-                            <a class="sidebar-link" href="../HastaPanel/index.aspx">
-                                <i class="align-middle" data-feather="activity"></i><span class="align-middle">Mesane</span>
-                            </a>
-                        </li>
-                        <asp:repeater id="rp_kategori" runat="server">
-                            <itemtemplate>
+                        <asp:Repeater ID="rp_kategori" runat="server">
+                            <ItemTemplate>
                                 <li class="sidebar-item active">
 
                                     <a class="sidebar-link" href="../HastaPanel/<%# Eval("url") %>.aspx?mid=<%#Eval("ID") %>">
                                         <i class="align-middle" data-feather="activity"></i><span class="align-middle"><%# Eval("Ad") %></span>
                                     </a>
                                 </li>
-                            </itemtemplate>
-                        </asp:repeater>
+                            </ItemTemplate>
+                        </asp:Repeater>
                         <%--<li class="sidebar-item">
 						<a class="sidebar-link" href="../HastaPanel/hasta_takip.aspx">
               <i class="align-middle" data-feather="user"></i> <span class="align-middle">Hasta Takip</span>
             </a>
 					</li>--%>
-
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="../HastaPanel/Test.aspx">
+                                <i class="align-middle" data-feather="user"></i><span class="align-middle">Test</span>
+                            </a>
+                        </li>
                         <li class="sidebar-item">
                             <a class="sidebar-link" href="../TemelSayfalar/AnaSayfa.aspx">
                                 <i class="align-middle" data-feather="user"></i><span class="align-middle">AnaSayfa</span>
@@ -73,6 +71,12 @@
                                 <i class="align-middle" data-feather="user"></i><span class="align-middle">Hakkımızda</span>
                             </a>
                         </li>
+                        <li class="sidebar-item">
+                            <a class="sidebar-link" href="../TemelSayfalar/cikis.aspx">
+                                <i class="align-middle" data-feather="user"></i><span class="align-middle">Çıkış Yap</span>
+                            </a>
+                        </li>
+
 
 
                     </ul>
