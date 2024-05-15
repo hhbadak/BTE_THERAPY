@@ -43,9 +43,7 @@
                             <p class="text-primary">DOÇ. DR. FİZYOTERAPİST</p>
                             <h5>Özge Çeliker Tosun</h5>
                             <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square" href="https://wa.me/+905055252029"><i class="fab fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>
@@ -59,9 +57,7 @@
                             <p class="text-primary">UZMAN FİZYOTERAPİST</p>
                             <h5>Damla Korkmaz Dayıcan</h5>
                             <div class="team-social text-center">
-                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                                <a class="btn btn-square" href="https://wa.me/+905547282019"><i class="fab fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>
@@ -75,9 +71,7 @@
                             <p class="text-primary">UZMAN FİZYOTERAPİST</p>
                             <h5>Büşra Palaz</h5>
                             <div class="team-social text-center">
-                             <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
-                                  <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                             <a class="btn btn-square" href="https://wa.me/+905397950301"><i class="fab fa-whatsapp"></i></a>
                                      </div>
                         </div>
                     </div>

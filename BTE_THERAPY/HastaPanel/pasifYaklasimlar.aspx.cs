@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataAccessLayer;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -9,9 +10,22 @@ namespace BTE_THERAPY.HastaPanel
 {
     public partial class pasifYaklasimlar : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        DataModel dm = new DataModel();
+        protected void Page_Init(object sender, EventArgs e)
         {
+            int selectedCategoryID = GetSelectedCategoryID();
+            Repeater1.DataSource = dm.VerileriAltKategoridenGetir(selectedCategoryID);
+            Repeater1.DataBind();
+        }
 
+        private int GetSelectedCategoryID()
+        {
+            int selectedCategoryID = 0;
+            if (Request.QueryString["mid"] != null)
+            {
+                selectedCategoryID = Convert.ToInt32(Request.QueryString["mid"]);
+            }
+            return selectedCategoryID;
         }
     }
 }

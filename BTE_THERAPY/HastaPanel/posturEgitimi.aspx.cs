@@ -12,21 +12,21 @@ namespace BTE_THERAPY.HastaPanel
     public partial class posturEgitimi : System.Web.UI.Page
     {
         DataModel dm = new DataModel();
-        protected void Page_Load(object sender, EventArgs e)
+        protected void Page_Init(object sender, EventArgs e)
         {
-            if (sender is Control control && control.NamingContainer != null)
+            int selectedCategoryID = GetSelectedCategoryID();
+            Repeater1.DataSource = dm.VerileriAltKategoridenGetir(selectedCategoryID);
+            Repeater1.DataBind();
+        }
+
+        private int GetSelectedCategoryID()
+        {
+            int selectedCategoryID = 0;
+            if (Request.QueryString["mid"] != null)
             {
-                RepeaterItem item = (RepeaterItem)control.NamingContainer;
-                if (item.DataItem != null)
-                {
-                    int selectedCategoryID = Convert.ToInt32(DataBinder.Eval(item.DataItem, "ID"));
-                    if (selectedCategoryID != null) // Veri kaynağından dönen ID null değilse devam edin
-                    {
-                        Repeater1.DataSource = dm.VerileriAltKategoridenGetir(selectedCategoryID);
-                        Repeater1.DataBind();
-                    }
-                }
+                selectedCategoryID = Convert.ToInt32(Request.QueryString["mid"]);
             }
+            return selectedCategoryID;
         }
 
     }

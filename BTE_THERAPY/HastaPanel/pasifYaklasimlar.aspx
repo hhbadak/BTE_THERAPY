@@ -3,29 +3,58 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="portfolio-filter">
-        <button type="button" data-filter="all">Diyafram</button>
-        <button type="button" data-filter="special">Abdominal Duvar</button>
-        <button type="button" data-filter="special">Torakolumbal Fasya</button>
-        <button type="button" data-filter="special">Kalça Çevresi Kaslar</button>
-        <button type="button" data-filter="special">Pelvik Taban</button>
+    <%-- <div class="portfolio-filter">
+        <button type="button" data-filter="all">Alarm Tedavisi</button>
+        <button type="button" data-filter="special">İşeme ve Dışkılama Eğitimi</button>
+        <button type="button" data-filter="special">Sıvı ve Beslenme Önerileri</button>
+        <button type="button" data-filter="special">Doğru Tuvalet Pozisyonu</button>
+        <button type="button" data-filter="special">Davranış Değişikliği</button>
     </div>
-    <div class="row">
-        <asp:Repeater ID="rp_icerik" runat="server">
+
+    <div class="card-grid">
+        <asp:Repeater ID="Repeater1" runat="server">
             <ItemTemplate>
-                <div class="col-12 col-md-6">
-                    <div class="card">
-                        <img class="card-img-top" src='<%# "../FizyoterapistPanel/img/icerik/" + Eval("Foto") %>' alt='<%# Eval("Ad") %>'>
-                        <div class="card-header">
-                            <h5 class="card-title mb-0">Card with image and button</h5>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
+                <div class="card filtr-item" data-category="<%# Eval("AltKategoriID") %>">
+                    <a href='../HastaPanel/egzersizDetay.aspx?mid=<%#Eval("ID") %>'>
+                        <img src="../FizyoterapistPanel/img/icerik/<%# Eval("Foto") %>" alt='<%# Eval("Ad") %>' />
+                        <p><%# Eval("Baslik") %></p>
+                    </a>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>--%>
+
+
+
+
+    <div class="portfolio-filter">
+        <button type="button" onclick="filterData(14)">Diyafram</button>
+        <button type="button" onclick="filterData(15)">Abdominal Duvar</button>
+        <button type="button" onclick="filterData(16)">Torakolumbal Fasya</button>
+        <button type="button" onclick="filterData(17)">Kalça Çevresi Kaslar</button>
+        <button type="button" onclick="filterData(18)">Pelvik Taban</button>
+
+    </div>
+
+    <div class="card-grid">
+        <asp:Repeater ID="Repeater1" runat="server">
+            <ItemTemplate>
+                <div class="card filtr-item" data-category="<%# Eval("AltKategoriID") %>">
+                    <a href='../HastaPanel/egzersizDetay.aspx?mid=<%#Eval("ID") %>'>
+                        <img src="../FizyoterapistPanel/img/icerik/<%# Eval("Foto") %>" alt='<%# Eval("Ad") %>' />
+                        <p><%# Eval("Baslik") %></p>
+                    </a>
                 </div>
             </ItemTemplate>
         </asp:Repeater>
     </div>
+    <script>
+        function filterData(categoryID) {
+            var baseUrl = window.location.href.split('?')[0];
+            var newUrl = baseUrl + '?mid=' + categoryID;
+            window.location.href = newUrl;
+        }
+
+
+    </script>
 </asp:Content>

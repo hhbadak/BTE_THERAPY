@@ -2,13 +2,61 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <div class="portfolio-filter">
-        <button type="button" data-filter="all">Proprioseptif Duyu</button>
-        <button type="button" data-filter="special">Vestibüler Duyu</button>
-        <button type="button" data-filter="special">İnteroseptif Duyu</button>
-        <button type="button" data-filter="special">Taktil Duyu</button>
-        <button type="button" data-filter="special">Tat ve Koku Duyusu</button>
-        <button type="button" data-filter="special">Görsel Duyu</button>
-        <button type="button" data-filter="special">İşitsel Duyu</button>
+    <%-- <div class="portfolio-filter">
+        <button type="button" data-filter="all">Alarm Tedavisi</button>
+        <button type="button" data-filter="special">İşeme ve Dışkılama Eğitimi</button>
+        <button type="button" data-filter="special">Sıvı ve Beslenme Önerileri</button>
+        <button type="button" data-filter="special">Doğru Tuvalet Pozisyonu</button>
+        <button type="button" data-filter="special">Davranış Değişikliği</button>
     </div>
+
+    <div class="card-grid">
+        <asp:Repeater ID="Repeater1" runat="server">
+            <ItemTemplate>
+                <div class="card filtr-item" data-category="<%# Eval("AltKategoriID") %>">
+                    <a href='../HastaPanel/egzersizDetay.aspx?mid=<%#Eval("ID") %>'>
+                        <img src="../FizyoterapistPanel/img/icerik/<%# Eval("Foto") %>" alt='<%# Eval("Ad") %>' />
+                        <p><%# Eval("Baslik") %></p>
+                    </a>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>--%>
+
+
+
+
+    <div class="portfolio-filter">
+        <button type="button" onclick="filterData(7)">Proprioseptif Duyu</button>
+        <button type="button" onclick="filterData(8)">Vestibüler Duyu</button>
+        <button type="button" onclick="filterData(9)">İnteroseptif Duyu</button>
+        <button type="button" onclick="filterData(10)">Taktil Duyu</button>
+        <button type="button" onclick="filterData(11)">Tat ve Koku Duyusu</button>
+        <button type="button" onclick="filterData(12)">Görsel Duyu</button>
+        <button type="button" onclick="filterData(13)">İşitsel Duyu</button>
+
+        <!-- Diğer butonlar buraya eklenebilir -->
+    </div>
+
+    <div class="card-grid">
+        <asp:Repeater ID="Repeater1" runat="server">
+            <ItemTemplate>
+                <div class="card filtr-item" data-category="<%# Eval("AltKategoriID") %>">
+                    <a href='../HastaPanel/egzersizDetay.aspx?mid=<%#Eval("ID") %>'>
+                        <img src="../FizyoterapistPanel/img/icerik/<%# Eval("Foto") %>" alt='<%# Eval("Ad") %>' />
+                        <p><%# Eval("Baslik") %></p>
+                    </a>
+                </div>
+            </ItemTemplate>
+        </asp:Repeater>
+    </div>
+    <script>
+        function filterData(categoryID) {
+            var baseUrl = window.location.href.split('?')[0];
+            var newUrl = baseUrl + '?mid=' + categoryID;
+            window.location.href = newUrl;
+        }
+
+
+    </script>
 </asp:Content>

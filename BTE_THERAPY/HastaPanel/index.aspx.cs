@@ -14,13 +14,6 @@ namespace BTE_THERAPY.HastaPanel
         DataModel dm = new DataModel();
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-                ddl_kategoriler.DataTextField = "Ad";
-                ddl_kategoriler.DataValueField = "ID";
-                ddl_kategoriler.DataSource = dm.KategoriListele();
-                ddl_kategoriler.DataBind();
-            }
         }
 
         protected void ddl_kategoriler_SelectedIndexChanged(object sender, EventArgs e)

@@ -561,3 +561,6 @@ C:\Users\emree\OneDrive\Masaüstü\BTE_THERAPY\BTE_THERAPY\obj\Debug\BTE_THERAPY
 C:\Users\emree\OneDrive\Masaüstü\BTE_THERAPY\BTE_THERAPY\obj\Debug\BTE_THER.EF5D1F96.Up2Date
 C:\Users\emree\OneDrive\Masaüstü\BTE_THERAPY\BTE_THERAPY\obj\Debug\BTE_THERAPY.dll
 C:\Users\emree\OneDrive\Masaüstü\BTE_THERAPY\BTE_THERAPY\obj\Debug\BTE_THERAPY.pdb
+C:\Users\batuh\Documents\GitHub\BTE_THERAPY\BTE_THERAPY\bin\BouncyCastle.Crypto.dll
+C:\Users\batuh\Documents\GitHub\BTE_THERAPY\BTE_THERAPY\bin\itextsharp.dll
+C:\Users\batuh\Documents\GitHub\BTE_THERAPY\BTE_THERAPY\bin\itextsharp.xml

@@ -78,7 +78,6 @@
   <ItemGroup>
     <Content Include="FizyoterapistPanel\css\app.css" />
     <Content Include="FizyoterapistPanel\giris.aspx" />
-    <Content Include="FizyoterapistPanel\hasta_takip.aspx" />
     <Content Include="FizyoterapistPanel\icerik.aspx" />
     <Content Include="FizyoterapistPanel\img\avatars\avatar-2.jpg" />
     <Content Include="FizyoterapistPanel\img\avatars\avatar-3.jpg" />
@@ -128,6 +127,7 @@
     <Content Include="TemelSayfalar\img\hakkimizdasayfasi\hakkımızda1.png" />
     <Content Include="TemelSayfalar\img\headerlogo.png" />
     <Content Include="TemelSayfalar\img\nedenbiz\nedenbiz.jpg" />
+    <Content Include="TemelSayfalar\img\none.jpg" />
     <Content Include="TemelSayfalar\img\whatsapp.png" />
     <Content Include="TemelSayfalar\img\yok.jpg" />
     <Content Include="TemelSayfalar\js\main.js" />
@@ -168,13 +168,6 @@
     </Compile>
     <Compile Include="FizyoterapistPanel\giris.aspx.designer.cs">
       <DependentUpon>giris.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="FizyoterapistPanel\hasta_takip.aspx.cs">
-      <DependentUpon>hasta_takip.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="FizyoterapistPanel\hasta_takip.aspx.designer.cs">
-      <DependentUpon>hasta_takip.aspx</DependentUpon>
     </Compile>
     <Compile Include="FizyoterapistPanel\icerik.aspx.cs">
       <DependentUpon>icerik.aspx</DependentUpon>
