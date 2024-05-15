@@ -4,11 +4,11 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="portfolio-filter">
-        <button type="button" onclick="filterData(14)">Diyafram</button>
-        <button type="button" onclick="filterData(15)">Abdominal Duvar</button>
-        <button type="button" onclick="filterData(16)">Torakolumbal Fasya</button>
-        <button type="button" onclick="filterData(17)">Kalça Çevresi Kaslar</button>
-        <button type="button" onclick="filterData(18)">Pelvik Taban</button>
+        <button type="button" onclick="filterData(13)">Diyafram</button>
+        <button type="button" onclick="filterData(14)">Abdominal Duvar</button>
+        <button type="button" onclick="filterData(15)">Torakolumbal Fasya</button>
+        <button type="button" onclick="filterData(16)">Kalça Çevresi Kaslar</button>
+        <button type="button" onclick="filterData(17)">Pelvik Taban</button>
 
     </div>
 

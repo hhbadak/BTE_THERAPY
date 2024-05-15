@@ -5,12 +5,11 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="portfolio-filter">
-        <button type="button" onclick="filterData(1)">Davranış Değişikliği</button>
-        <button type="button" onclick="filterData(2)">Doğru Tuvalet Pozisyonu</button>
+        <button type="button" onclick="filterData(1)">Alarm Tedavisi</button>
+        <button type="button" onclick="filterData(2)">İşeme ve Dışkılama Eğitimi</button>
         <button type="button" onclick="filterData(3)">Sıvı ve Beslenme Önerileri</button>
-        <button type="button" onclick="filterData(5)">İşeme ve Dışkılama Eğitimi</button>
-        <button type="button" onclick="filterData(6)">Alarm Tedavisi</button>
-
+        <button type="button" onclick="filterData(4)">Doğru Tuvalet Pozisyonu</button>
+        <button type="button" onclick="filterData(5)">Davranış Değişikliği</button>
     </div>
 
     <div class="card-grid">

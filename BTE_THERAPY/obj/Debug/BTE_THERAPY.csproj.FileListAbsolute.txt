@@ -567,3 +567,6 @@ C:\Users\batuh\Documents\GitHub\BTE_THERAPY\BTE_THERAPY\bin\itextsharp.xml
 C:\Users\USER\Documents\GitHub\BTE_THERAPY\BTE_THERAPY\bin\BouncyCastle.Crypto.dll
 C:\Users\USER\Documents\GitHub\BTE_THERAPY\BTE_THERAPY\bin\itextsharp.dll
 C:\Users\USER\Documents\GitHub\BTE_THERAPY\BTE_THERAPY\bin\itextsharp.xml
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\BTE_THERAPY\BTE_THERAPY\bin\BouncyCastle.Crypto.dll
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\BTE_THERAPY\BTE_THERAPY\bin\itextsharp.dll
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\BTE_THERAPY\BTE_THERAPY\bin\itextsharp.xml

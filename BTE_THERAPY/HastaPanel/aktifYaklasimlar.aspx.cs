@@ -11,7 +11,7 @@ namespace BTE_THERAPY.HastaPanel
     public partial class aktifYaklasimlar : System.Web.UI.Page
     {
         DataModel dm = new DataModel();
-        protected void Page_Init(object sender, EventArgs e)
+        protected void Page_Load(object sender, EventArgs e)
         {
             int selectedCategoryID = GetSelectedCategoryID();
             Repeater1.DataSource = dm.VerileriAltKategoridenGetir(selectedCategoryID);

@@ -5,13 +5,13 @@
 
 
     <div class="portfolio-filter">
-        <button type="button" onclick="filterData(7)">Proprioseptif Duyu</button>
-        <button type="button" onclick="filterData(8)">Vestibüler Duyu</button>
-        <button type="button" onclick="filterData(9)">İnteroseptif Duyu</button>
-        <button type="button" onclick="filterData(10)">Taktil Duyu</button>
-        <button type="button" onclick="filterData(11)">Tat ve Koku Duyusu</button>
-        <button type="button" onclick="filterData(12)">Görsel Duyu</button>
-        <button type="button" onclick="filterData(13)">İşitsel Duyu</button>
+        <button type="button" onclick="filterData(6)">Proprioseptif Duyu</button>
+        <button type="button" onclick="filterData(7)">Vestibüler Duyu</button>
+        <button type="button" onclick="filterData(8)">İnteroseptif Duyu</button>
+        <button type="button" onclick="filterData(9)">Taktil Duyu</button>
+        <button type="button" onclick="filterData(10)">Tat ve Koku Duyusu</button>
+        <button type="button" onclick="filterData(11)">Görsel Duyu</button>
+        <button type="button" onclick="filterData(12)">İşitsel Duyu</button>
 
         <!-- Diğer butonlar buraya eklenebilir -->
     </div>

@@ -40,3 +40,7 @@ C:\Users\USER\Documents\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\BouncyCastl
 C:\Users\USER\Documents\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\itextsharp.dll
 C:\Users\USER\Documents\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\itextsharp.xml
 C:\Users\USER\Documents\GitHub\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\itextsharp.dll
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\itextsharp.xml
+C:\Users\HsnHs\OneDrive\Belgeler\GitHub\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete

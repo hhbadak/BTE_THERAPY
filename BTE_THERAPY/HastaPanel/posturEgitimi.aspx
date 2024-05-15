@@ -4,8 +4,8 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="portfolio-filter">
-        <button type="button" onclick="filterData(22)">Çocuklarda Postür ve Postürel Farkındalık</button>
-        <button type="button" onclick="filterData(23)">Postür Egzersizleri</button>
+        <button type="button" onclick="filterData(21)">Çocuklarda Postür ve Postürel Farkındalık</button>
+        <button type="button" onclick="filterData(22)">Postür Egzersizleri</button>
 
     </div>
 
