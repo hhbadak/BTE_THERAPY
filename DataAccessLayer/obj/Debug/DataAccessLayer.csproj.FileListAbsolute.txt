@@ -36,3 +36,7 @@ C:\Users\batuh\Documents\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\BouncyCast
 C:\Users\batuh\Documents\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\itextsharp.dll
 C:\Users\batuh\Documents\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\itextsharp.xml
 C:\Users\batuh\Documents\GitHub\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAcce.E67BD773.Up2Date
+C:\Users\USER\Documents\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\USER\Documents\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\itextsharp.dll
+C:\Users\USER\Documents\GitHub\BTE_THERAPY\DataAccessLayer\bin\Debug\itextsharp.xml
+C:\Users\USER\Documents\GitHub\BTE_THERAPY\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
