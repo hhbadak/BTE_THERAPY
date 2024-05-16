@@ -16,7 +16,7 @@
         <asp:Repeater ID="Repeater1" runat="server">
             <ItemTemplate>
                 <div class="card filtr-item" data-category="<%# Eval("AltKategoriID") %>">
-                    <a href='../HastaPanel/egzersizDetay.aspx?mid=<%#Eval("ID") %>'>
+                    <a href='../HastaPanel/egzersizDetay.aspx?mid=<%#Eval("AltKategoriID") %>'>
                         <img src="../FizyoterapistPanel/img/icerik/<%# Eval("Foto") %>" alt='<%# Eval("Ad") %>' />
                         <p><%# Eval("Baslik") %></p>
                     </a>

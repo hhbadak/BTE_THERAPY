@@ -8,7 +8,7 @@ namespace BTE_THERAPY.FizyoterapistPanel
 {
     public partial class kayitol : System.Web.UI.Page
     {
-        SqlConnection baglanti = new SqlConnection(@"data source=.\SQLEXPRESS;initial catalog=BTE_THERAPY;integrated security=True");
+        SqlConnection baglanti = new SqlConnection(@"data source=.\;initial catalog=BTE_THERAPY;integrated security=True");
 
         protected void Page_Load(object sender, EventArgs e)
         {
