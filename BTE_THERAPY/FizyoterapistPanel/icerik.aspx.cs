@@ -39,6 +39,9 @@ namespace BTE_THERAPY.FizyoterapistPanel
                     if (fi.Extension == ".jpg" || fi.Extension == ".png")
                     {
                         string uzanti = fi.Extension;
+
+                        //veritabanına string veriye çeviriyor fotoğrafı
+
                         string resimIsim = Guid.NewGuid().ToString();
                         egzersiz.Foto = resimIsim + uzanti;
 
