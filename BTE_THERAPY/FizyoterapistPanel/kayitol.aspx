@@ -12,11 +12,11 @@
     <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web" />
 
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link rel="shortcut icon" href="img/icons/icon-48x48.png" />
+    <link rel="shortcut icon" href="../TemelSayfalar/img/headerlogo.png" />
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/pages-sign-in.html" />
 
-    <title>Sign In | AdminKit Demo</title>
+    <title></title>
 
     <link href="../FizyoterapistPanel/css/app.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
@@ -39,6 +39,7 @@
                                         <div class="mb-3">
                                             <label class="form-label">Ad-Soyad</label>
                                             <asp:TextBox ID="tb_adsoyad" runat="server" CssClass="form-control form-control-lg" placeholder="Adınızı Ve Soyadınızı giriniz"></asp:TextBox>
+                                            
                                         </div>
                                         <div class="mb-3">
                                             <label class="form-label">Email</label>
@@ -93,24 +94,24 @@
         function formatTelefon() {
             var telefon = document.getElementById('<%= tb_telefon.ClientID %>').value;
 
-    // Gelen telefon numarasında boşlukları kaldır
-    telefon = telefon.replace(/\s/g, '');
+            // Gelen telefon numarasında boşlukları kaldır
+            telefon = telefon.replace(/\s/g, '');
 
-    // Eğer +90 ile başlamıyorsa, +90 ekleyin
-    if (!telefon.startsWith('+90')) {
-        telefon = '+90' + telefon;
-    }
+            // Eğer +90 ile başlamıyorsa, +90 ekleyin
+            if (!telefon.startsWith('+90')) {
+                telefon = '+90' + telefon;
+            }
 
-    // Gereksiz karakterleri kaldır
-    telefon = telefon.replace(/\D/g, '');
+            // Gereksiz karakterleri kaldır
+            telefon = telefon.replace(/\D/g, '');
 
-    // Uyarı verilecek koşulları kontrol et
-    if (telefon.length !== 13 || isNaN(telefon)) {
-        alert("Telefon numarası geçersiz! Lütfen +90XXXXXXXXXX formatında girin.");
-        return;
-    }
+            // Uyarı verilecek koşulları kontrol et
+            if (telefon.length !== 13 || isNaN(telefon)) {
+                alert("Telefon numarası geçersiz! Lütfen +90XXXXXXXXXX formatında girin.");
+                return;
+            }
 
-    // Son halini TextBox'a yazdır
+            // Son halini TextBox'a yazdır
             document.getElementById('<%= tb_telefon.ClientID %>').value = telefon;
         }
 

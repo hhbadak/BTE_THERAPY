@@ -3,6 +3,7 @@ using System.Data.SqlClient;
 using System.Security.Cryptography;
 using System.Text;
 using System.Web.UI;
+using System.Web.UI.WebControls;
 
 namespace BTE_THERAPY.FizyoterapistPanel
 {
@@ -55,6 +56,14 @@ namespace BTE_THERAPY.FizyoterapistPanel
             DateTime kayitTarihi = DateTime.Now;
             string kayitTarihiStr = kayitTarihi.ToString("yyyy-MM-dd HH:mm:ss");
 
+            if (string.IsNullOrWhiteSpace(AdSoyad))
+            {
+                string script = "alert('Lütfen adınızı ve soyadınızı giriniz.');";
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
+                baglanti.Close();
+                return;
+            }
+
             // E-posta doğrulaması
             if (!Email.Contains("@"))
             {
@@ -72,11 +81,25 @@ namespace BTE_THERAPY.FizyoterapistPanel
                 baglanti.Close();
                 return;
             }
+            if (string.IsNullOrWhiteSpace(sifre))
+            {
+                string script = "alert('Lütfen bir parola giriniz.');";
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
+                baglanti.Close();
+                return;
+            }
 
             if (sifre != sifretekrar)
             {
                 string script = "alert('Parola ve parola tekrarı uyuşmuyor. Lütfen aynı parolayı girin.');";
                 ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
+            }
+            if (string.IsNullOrWhiteSpace(telefon))
+            {
+                string script = "alert('Lütfen bir telefon numarası giriniz.');";
+                ClientScript.RegisterStartupScript(this.GetType(), "alert", script, true);
+                baglanti.Close();
+                return;
             }
             else
             {
@@ -117,5 +140,6 @@ namespace BTE_THERAPY.FizyoterapistPanel
             }
             return true;
         }
+       
     }
 }

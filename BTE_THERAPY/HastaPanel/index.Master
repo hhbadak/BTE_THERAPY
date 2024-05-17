@@ -12,10 +12,10 @@
     <meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="shortcut icon" href="../FizyoterapistPanel/img/icons/icon-48x48.png" />
+    <link rel="shortcut icon" href="../TemelSayfalar/img/headerlogo.png" />
 
     <link rel="canonical" href="https://demo-basic.adminkit.io/" />
-    <title>AdminKit Demo - Bootstrap 5 Admin Template</title>
+    <title>PediPelvikSağlık</title>
     <link href="../HastaPanel/css/filter.css" rel="stylesheet" />
     <link href="../FizyoterapistPanel/css/app.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
@@ -272,7 +272,6 @@
                 var gradient = ctx.createLinearGradient(0, 0, 0, 225);
                 gradient.addColorStop(0, "rgba(215, 227, 244, 1)");
                 gradient.addColorStop(1, "rgba(215, 227, 244, 0)");
-                // Line chart
                 new Chart(document.getElementById("chartjs-dashboard-line"), {
                     type: "line",
                     data: {
@@ -338,7 +337,6 @@
         </script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                // Pie chart
                 new Chart(document.getElementById("chartjs-dashboard-pie"), {
                     type: "pie",
                     data: {
@@ -366,7 +364,6 @@
         </script>
         <script>
             document.addEventListener("DOMContentLoaded", function () {
-                // Bar chart
                 new Chart(document.getElementById("chartjs-dashboard-bar"), {
                     type: "bar",
                     data: {
