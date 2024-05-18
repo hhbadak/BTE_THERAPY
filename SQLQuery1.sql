@@ -132,3 +132,10 @@ INSERT INTO AltKategori(UstKategoriID, AltKategori) VALUES(4,'Pelvik Taban Egzer
 
 INSERT INTO AltKategori(UstKategoriID, AltKategori) VALUES(5,'Çocuklarda Postür ve Postürel Farkýndalýk')
 INSERT INTO AltKategori(UstKategoriID, AltKategori) VALUES(5,'Postür Egzersizleri')
+
+INSERT INTO Fizyoterapist(AdSoyad, Foto, EMail, Parola, Telefon, Cinsiyet, DogumTarih, KayitTarihi, Durum) VALUES('Özge ÇELÝKER TOSUN', 'none.png', 'ozge.tosun@deu.edu.tr', '17bb46c505fc378463a6a64491495dd703f7791e69b36a9575ce72b9be70eb95', '+905055252029', 0, '1990-05-05', '2024-05-17', 1)
+
+INSERT INTO Fizyoterapist(AdSoyad, Foto, EMail, Parola, Telefon, Cinsiyet, DogumTarih, KayitTarihi, Durum) VALUES('Büþra PALAZ', 'none.png', 'busra.palaz@deu.edu.tr', '17bb46c505fc378463a6a64491495dd703f7791e69b36a9575ce72b9be70eb95', '+905397950301', 0, '1990-05-05', '2024-05-17', 1)
+
+INSERT INTO Fizyoterapist(AdSoyad, Foto, EMail, Parola, Telefon, Cinsiyet, DogumTarih, KayitTarihi, Durum) VALUES('Damla KORKMAZ DAYICAN', 'none.png', 'damla.dayican@deu.edu.tr', '17bb46c505fc378463a6a64491495dd703f7791e69b36a9575ce72b9be70eb95', '+905547282019', 0, '1990-05-05', '2024-05-17', 1)
+
