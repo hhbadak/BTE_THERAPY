@@ -8,6 +8,6 @@ namespace DataAccessLayer
 {
     public class ConnectionStrings
     {
-        public static string ConStr = @"data source =.\; Initial Catalog = BTE_THERAPY; Integrated Security = True";
+        public static string ConStr = @"Data Source=neptune.odeaweb.com;Network Library=DBMSSOCN;Initial Catalog=pedipelviksaglik;User ID=pedipelvik;Password=xl2Qq&225";
     }
 }
